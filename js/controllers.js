@@ -57,35 +57,35 @@ angular.module('styleGuideApp.controllers')
         },
         'alignment': {
           title: 'Alignment',
-          template: 'bower_components/widget-settings-ui-components/demos/alignment-demo.html'
+          template: 'libs/widget-settings-ui-components/demos/alignment-demo.html'
         },
         'color-picker': {
           title: 'Color Picker',
-          template: 'bower_components/widget-settings-ui-components/demos/color-picker-demo.html'
+          template: 'libs/widget-settings-ui-components/demos/color-picker-demo.html'
         },
         'column-selector': {
           title: 'Column Selector',
-          template: 'bower_components/widget-settings-ui-components/demos/column-selector-demo.html'
+          template: 'libs/widget-settings-ui-components/demos/column-selector-demo.html'
         },
         'financial-selector': {
           title: 'Financial Selector',
-          template: 'bower_components/component-financial-selector/demos/financial-selector-demo.html'
+          template: 'libs/component-financial-selector/demos/financial-selector-demo.html'
         },
         'scroll-setting': {
           title: 'Scroll Setting',
-          template: 'bower_components/widget-settings-ui-components/demos/scroll-setting-demo.html'
+          template: 'libs/widget-settings-ui-components/demos/scroll-setting-demo.html'
         },
         'table-setting': {
           title: 'Table Setting',
-          template: 'bower_components/widget-settings-ui-components/demos/table-setting-demo.html'
+          template: 'libs/widget-settings-ui-components/demos/table-setting-demo.html'
         },
         'tooltip': {
           title: 'Tooltip',
-          template: 'bower_components/widget-settings-ui-components/demos/tooltip-demo.html'
+          template: 'libs/widget-settings-ui-components/demos/tooltip-demo.html'
         },
         'font-style': {
           title: 'Font Style',
-          template: 'bower_components/widget-settings-ui-components/demos/font-style-demo.html'
+          template: 'libs/widget-settings-ui-components/demos/font-style-demo.html'
         },
         'placeholder': {
           title: 'Placeholder Text',
@@ -101,15 +101,15 @@ angular.module('styleGuideApp.controllers')
         },
         'google-spreadsheet-controls': {
           title: 'Google Spreadsheet Controls',
-          template: 'bower_components/component-google-spreadsheet-controls/demos/example.html'
+          template: 'libs/component-google-spreadsheet-controls/demos/example.html'
         },
         'url-field': {
           title: 'URL Field',
-          template: 'bower_components/widget-settings-ui-components/demos/url-field-demo.html'
+          template: 'libs/widget-settings-ui-components/demos/url-field-demo.html'
         },
         'google-drive-picker': {
           title: 'Google Drive Picker',
-          template: 'bower_components/component-google-drive-picker/demos/example.html'
+          template: 'libs/component-google-drive-picker/demos/example.html'
         }
       };
 
