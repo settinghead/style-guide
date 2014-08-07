@@ -1,0 +1,55 @@
+<div class="container">
+
+  <div class="page-header">
+    <h1 class="page">Building a Demo Page for Your Component</h1>
+  </div>
+
+  <p>To build a demo for your component start by downloading the <code>example.html</code> file from the link below. Include this file within your component repository in the top level directory eg: <code>my-component/example.html</code>. The Style-Guide will include all components and their dependencies using Bower.</p>
+
+  <p>The Style-Guide is a simple AngularJS app where each component is provided it's own route. The <code>example.html</code> file in your component repository will be used as the template for this route. Therefore, you can maintain the component and the demo independent of the Style-Guide.</p>
+
+  <p class="text-center"><a href="https://github.com/Rise-Vision/style-guide-docs/blob/master/example.html" target="_blank" class="btn btn-lg btn-outline btn-success">get the example.html source on github</a></p>
+
+  <h2>Sections</h2>
+  <p>The demo must include the following:</p>
+
+  <ul>
+    <li>A tile - name of the component</li>
+    <li>Short introduction</li>
+    <li>List of dependencies</li>
+    <li>Code snippet of how to use the component</li>
+    <li>Code snippet of sample data that is required by the component</li>
+    <li>A functional demo of the component</li>
+  </ul>
+
+  <h2>Code Snippets</h2>
+  <p>We are using <a target="_blank" href="https://github.com/pc035860/angular-highlightjs">angular-highlightjs</a> for displaying code snippets with syntax highlighting. You can utilize the <code>hljs</code> directive to wrap a block of inline code. The other, recommended, option is to use inline angular templates and use the <code>include</code> attribute. The inline templates preserve white-space and indentation where as the wrapper method doesn't.</p>
+
+  <div class="row">
+    <div class="col-md-6">
+      <hljs include="'code-snippet-example-1'"></hljs>
+    </div>
+    <div class="col-md-6">
+      <hljs include="'code-snippet-example-2'"></hljs>
+    </div>
+  </div>
+<!-- Code Snippet -->
+<script type="text/ng-template" id="code-snippet-example-1">
+<hljs>
+  Code goes here ....
+</hljs>
+</script>
+
+<script type="text/ng-template" id="code-snippet-example-2">
+<!--  Example of how to use inline
+  templates with the directive -->
+<hljs include="'code-snippet-example-2'"></hljs>
+
+<!-- Inline template with code snippet -->
+<script type="text/ng-template" id="id-of template">
+  Code goes here ....
+< /script>
+</script>
+<!-- END Code Snippet -->
+
+</div>

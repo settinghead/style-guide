@@ -1,0 +1,93 @@
+<!-- *********************************
+    Template for Building a Demo
+      Page for Your Component
+********************************** -->
+<h1>Common Header</h1>
+
+<p class="lead">The introduction for your component goes here ...</p>
+
+<p><strong>Dependencies</strong> <span class="label label-info">list</span> <span class="label label-info">of</span> <span class="label label-info">dependencies</span> <span class="label label-info">goes</span> <span class="label label-info">here</span></p>
+
+<h3>Usage</h3>
+<hljs include="'user-Not-authenticated'"></hljs>
+
+<h3>Sample Data</h3>
+<hljs include="'sample-data'"></hljs>
+
+<h3>Example Settings</h3>
+<!-- Auth Status -->
+<div class="form-group">
+  <label for="auth-status">If your demo is interactive</label>
+  <label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" value="-1" ng-model="authStatus"> yes
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" value="0" ng-model="authStatus"> maybe
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" value="1" ng-model="authStatus"> no
+  </label>
+</div>
+<!-- Is Purchaser -->
+<div class="checkbox">
+  <label>
+    <input type="checkbox" ng-model="isPurchaser"> use a form like this
+  </label>
+</div>
+<!-- Company Loaded -->
+<div class="checkbox">
+  <label>
+    <input type="checkbox" ng-model="companyLoaded"> to set/toggle
+  </label>
+</div>
+<!-- Can Change Company -->
+<div class="checkbox">
+  <label>
+    <input type="checkbox" ng-model="canChangeCompany"> various states/properties
+  </label>
+</div>
+
+<!-- Dynamic Example -->
+<h3>Example</h3>
+<common-header
+  navOptions="navOptions"
+  auth-status="authStatus"
+  is-purchaser="isPurchaser"
+  company-loaded="companyLoaded"
+  can-change-company="canChangeCompany"
+  selected-company-name="selectedCompanyName"
+  user-profile-name="userProfileName"
+  user-profile-email="userProfileEmail"
+  user-profile-picture="userProfilePicture"
+  messages="messages"
+></common-header>
+
+<!-- Code Snippet -->
+<script type="text/ng-template" id="user-Not-authenticated">
+<component
+  attribute-one="data"
+  attribute-two="data"
+  attribute-three="data"
+></component>
+</script>
+<!-- END Code Snippet -->
+
+<!-- Code Snippet -->
+<script type="text/ng-template" id="sample-data">
+$scope.data = {
+  "_id": "53d6c6e9af44e63fdc39f2ae",
+  "index": 0,
+  "guid": "62f14592-6114-4cec-b602-e09531c69c17",
+  "isActive": false,
+  "balance": "$1,809.91",
+  "picture": "http://placehold.it/32x32",
+  "age": 21,
+  "eyeColor": "blue",
+  "name": "Bertha Cooke",
+  "gender": "female",
+  "company": "INSOURCE",
+  "email": "berthacooke@insource.com",
+  "phone": "+1 (984) 532-3287"
+};
+</script>
+<!-- END Code Snippet -->

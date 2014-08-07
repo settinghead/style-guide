@@ -1,0 +1,25 @@
+<!-- Main Container -->
+<div class="container">
+  <div class="page-header">
+    <h1 class="page">Rise Vision Style Guide</h1>
+  </div>
+  <p class="lead">Common CSS styling to be shared across all Rise Vision apps, widgets and components.</p>
+
+  <h2>Installation</h2>
+  <ol>
+    <li>Install node dependencies <code>$ npm install</code></li>
+    <li>Install front-end dependencies <code>$ bower install</code></li>
+  </ol>
+
+  <h2>Development</h2>
+  <p>All SASS files go under <code>/src</code>. To include them in the final CSS file add them as <code>imports</code> in the <code>app.scss</code> file.</p>
+
+  <p>The build process will pull in all the custom SASS files and the bootstrap SASS files and generate a single <code>rise.min.css</code> file. The hierarchy and overwrites are controlled within the <code>rise.min.css</code> file. The naming/directory structure has no impact on this.</p>
+
+  <p>Run <code>$ gulp</code> to see a list of available tasks and <code>$ gulp dev</code> to watch for and compile SASS.</p>
+
+  <h2>Build</h2>
+  <p>To build run <code>$gulp build</code>. This will generate a <code>dist</code> folder with <code>css</code> and <code>font</code> folders.</p>
+
+</div>
+<!-- END Main Container -->

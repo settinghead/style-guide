@@ -1,0 +1,29 @@
+<script type="text/ng-template" id="typeahead-multiselect">
+<select ui-select2 ng-model="select2" data-placeholder="Pick an item">
+  <option value=""></option>
+  <option ng-repeat="thing in things">{{thing}}</option>
+</select>
+</script>
+
+<h2 class="add-bottom">Typeahead Multiselect</h2>
+
+<p>An enhanced multiselect with typeahead and scrolling. This library can be used to build more complex examples, see <a href="https://github.com/angular-ui/ui-select2">angular-ui/ui-select2</a> for more info.</p>
+
+<p class="add-bottom"><strong>Dependencies</strong> <span class="label label-info">select2</span> <span class="label label-info">angular-ui-select2</span> <span class="label label-info">jquery</span></p>
+
+<h3>Example</h3>
+<div class="add-bottom">
+	<ng-include src="'typeahead-multiselect'"></ng-include>
+</div>
+
+<h3>Usage</h3>
+<hljs include="'typeahead-multiselect'"></hljs>
+
+<h3>Includes</h3>
+<p class="add-bottom">Make sure you include the following files in <code>index.html</code> and inject <code>'ui.select2'</code> in your app <code>angular.module('styleGuideApp', ['ui.select2']);</code></p>
+
+<hljs>
+bower_components/jquery/jquery.js
+bower_components/select2/select2.js
+bower_components/angular-ui-select2/src/select2.js
+</hljs>

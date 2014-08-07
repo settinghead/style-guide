@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html ng-app="styleGuideApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>Rise Vision Style Guide</title>
+
+    <!-- custom glyphicons css -->
+    <link href="//s3.amazonaws.com/rise-common-test/styles/glyphicons/glyphicons.min.css" rel="stylesheet" type="text/css">
+    <!-- app css -->
+    <link href="libs/rv-style-guide/dist/css/rise.min.css" rel="stylesheet" type="text/css">
+    <!-- styling for the docs -->
+    <link href="css/docs.css" rel="stylesheet" type="text/css">
+    <!-- syntax highlighting -->
+    <link href="http://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+  </head>
+
+  <body>
+
+    <!-- Global Navbar -->
+    <navbar></navbar>
+
+    <!-- Main View -->
+    <div ng-view></div>
+
+    <!-- JSAPI -->
+    <script src="//www.google.com/jsapi"></script>
+    <script>
+        google.load("visualization", "1");
+    </script>
+    <!-- dependencies -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular-route.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular-sanitize.js"></script>
+    <script src="libs/angular-translate/angular-translate.js"></script>
+    <script src="libs/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+    <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script src="js/libs/angular-highlightjs.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+    <script src="libs/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="libs/spectrum/spectrum.js"></script>
+    <script src="js/widget-common-mock.js"></script>
+    <script type="text/javascript" src="libs/angular-ui-select2/src/select2.js"></script>
+    <!-- financial-selector -->
+    <script src="libs/component-financial-selector/dist/js/financial-selector.js"></script>
+    <script src="libs/select2/select2.js"></script>
+    <!-- widget-settings-ui-components -->
+    <script src="libs/widget-settings-ui-components/dist/js/angular/tooltip.js"></script>
+    <script src="libs/widget-settings-ui-components/dist/js/angular/color-picker.js"></script>
+    <script src="libs/widget-settings-ui-components/dist/js/alignment.js"></script>
+    <script src="libs/widget-settings-ui-components/dist/js/angular/alignment.js"></script>
+    <script src="libs/widget-settings-ui-components/dist/js/angular/font-setting.js"></script>
+    <script src="libs/widget-settings-ui-components/dist/js/angular/column-setting.js"></script>
+    <script src="libs/widget-settings-ui-components/dist/js/angular/column-selector.js"></script>
+    <script src="libs/widget-settings-ui-components/dist/js/angular/scroll-setting.js"></script>
+    <script src="libs/widget-settings-ui-components/dist/js/angular/table-setting.js"></script>
+    <script src="libs/widget-settings-ui-components/dist/js/angular/table-setting.js"></script>
+    <script src="libs/widget-settings-ui-components/dist/js/angular/font-style.min.js"></script>
+    <script src="libs/widget-settings-ui-components/dist/js/font-style.min.js"></script>
+    <script src="libs/widget-settings-ui-components/dist/js/angular/url-field.js"></script>
+    <script src="libs/widget-settings-ui-components/dist/js/url-field.js"></script>
+    <!-- component-google-spreadsheet-controls -->
+    <script src="libs/component-google-spreadsheet-controls/dist/js/angular/google-spreadsheet-controls.js"></script>
+    <!-- component-google-drive-picker -->
+    <script src="//apis.google.com/js/client.js"></script>
+    <script src="libs/component-google-drive-picker/dist/js/angular/google-drive-picker.js"></script>
+    <!-- app js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/directives.js"></script>
+    <!-- components js -->
+    <script src="components/common-header/common-header.js"></script>
+  </body>
+</html>

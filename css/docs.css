@@ -1,0 +1,20 @@
+.examples {
+  padding-bottom: 80px !important;
+}
+
+.component {
+  padding-bottom: 300px !important;
+}
+
+pre,
+.hljs {
+	padding: 0px;
+	border-radius: 2px;
+	min-height: auto;
+	max-height: 340px;
+	overflow-y: scroll;
+}
+
+.fixed > pre {
+	height: 340px !important;
+}

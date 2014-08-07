@@ -1,0 +1,95 @@
+{
+  "name": "rv-style-guide",
+  "version": "0.3.0",
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "www"
+  ],
+  "dependencies": {
+    "style-guide": "git://github.com/Rise-Vision/style-guide",
+    "component-financial-selector": "git://github.com/Rise-Vision/component-financial-selector",
+    "widget-settings-ui-components": "git://github.com/Rise-Vision/widget-settings-ui-components",
+    "angular-translate": "~2.2.0",
+    "angular-translate-loader-static-files": "~2.2.0",
+    "angular-ui-select2": "~0.0.5",
+    "component-google-spreadsheet-controls": "git://github.com/Rise-Vision/component-google-spreadsheet-controls",
+    "component-google-drive-picker": "git://github.com/Rise-Vision/component-google-drive-picker"
+  },
+  "overrides": {
+    "rv-style-guide": {
+      "main": [
+        "dist/css/rise.min.css"
+      ]
+    },
+    "jquery": {
+      "main": {
+        "development": null,
+        "production": null
+      }
+    },
+    "angular": {
+      "main": {
+        "development": null,
+        "production": null
+      }
+    },
+    "angular-mocks": {
+      "main": {
+        "development": null,
+        "production": null
+      }
+    },
+    "angular-translate": {
+      "main": [
+        "angular-translate.js"
+      ]
+    },
+    "angular-translate-loader-static-files": {
+      "main": [
+        "angular-translate-loader-static-files.js"
+      ]
+    },
+    "component-financial-selector": {
+      "main": [
+        "demos/financial-selector-demo.html",
+        "dist/js/financial-selector.js"
+      ]
+    },
+    "widget-settings-ui-components": {
+      "main": [
+        "demos/*.html",
+        "dist/js/alignment.js",
+        "dist/js/angular/alignment.js",
+        "dist/js/angular/color-picker.js",
+        "dist/js/angular/font-setting.js",
+        "dist/js/angular/column-setting.js",
+        "dist/js/angular/column-selector.js",
+        "dist/js/angular/tooltip.js",
+        "dist/js/angular/scroll-setting.js",
+        "dist/js/angular/table-setting.js",
+        "dist/js/font-style.min.js",
+        "dist/js/angular/font-style.min.js",
+        "dist/js/angular/url-field.js",
+        "dist/js/url-field.js"
+      ]
+    },
+    "component-google-spreadsheet-controls": {
+      "main": [
+        "demos/example.html",
+        "dist/js/angular/google-spreadsheet-controls.js"
+      ]
+    },
+    "component-google-drive-picker": {
+      "main": [
+        "demos/example.html",
+        "dist/js/angular/google-drive-picker.js"
+      ]
+    }
+  }
+}
