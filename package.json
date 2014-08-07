@@ -1,6 +1,6 @@
 {
-  "name": "style-guide-docs",
-  "version": "0.0.1",
+  "name": "rv-style-guide-docs",
+  "version": "0.0.0",
   "description": "Reference documentation for all Rise Vision style-guide",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
