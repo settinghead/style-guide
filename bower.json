@@ -24,7 +24,8 @@
   "overrides": {
     "rv-style-guide": {
       "main": [
-        "dist/css/rise.min.css"
+        "dist/css/rise.min.css",
+        "dist/fonts/**.**"
       ]
     },
     "jquery": {
