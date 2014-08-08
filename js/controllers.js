@@ -92,7 +92,7 @@ angular.module('styleGuideApp.controllers')
           template: 'components/bootstrap-based/placeholder.html'
         },
         'loading': {
-          title: 'Loading Spinner (basic)',
+          title: 'Loading Spinner (Basic)',
           template: 'components/bootstrap-based/loading.html'
         },
         'buttons': {
