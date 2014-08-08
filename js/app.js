@@ -22,7 +22,9 @@ angular.module('styleGuideApp', [
   'risevision.widget.common.table-setting',
   'risevision.widget.common.google-spreadsheet-controls',
   'risevision.widget.common.url-field',
-  'risevision.widget.common.google-drive-picker'
+  'risevision.widget.common.google-drive-picker',
+  'rvLoading',
+  'rvLoading'
 ])
   .config(function(hljsServiceProvider) {
     hljsServiceProvider.setOptions({
