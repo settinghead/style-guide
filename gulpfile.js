@@ -5,6 +5,7 @@ var colors = require('colors');
 var watch = require('gulp-watch');
 var rename = require('gulp-rename');
 var mainBowerFiles = require('main-bower-files');
+var clean = require('gulp-clean');
 
 
 gulp.task('pickFromBower', function() {
@@ -45,6 +46,11 @@ gulp.task("json-combine", ["json-move"], function() {
     .pipe(gulp.dest("./locales/en"));
 });
 
+gulp.task('refreshCSS', function() {
+  return gulp.src('./bower_components/rv-style-guide/dist/css/**.css')
+    .pipe(gulp.dest('./libs/rv-style-guide/dist/css'))
+    .pipe(connect.reload());
+});
 
 gulp.task('dev', function() {
   // Start a server
@@ -60,8 +66,9 @@ gulp.task('dev', function() {
     glob: ['./components/**/*.html', './components/**/*.js', './libs/**/*.html', './libs/**/*.js', './partials/**/*.html', './js/**/*.js', './libs/**/*.js', './index.html']
   })
     .pipe(connect.reload());
-});
 
+  gulp.watch('./bower_components/rv-style-guide/dist/css/rise.min.css', ['refreshCSS']);
+});
 
 gulp.task('default', [], function() {
   console.log('***********************'.yellow);
