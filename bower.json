@@ -19,7 +19,8 @@
     "angular-translate-loader-static-files": "~2.2.0",
     "angular-ui-select2": "~0.0.5",
     "component-google-spreadsheet-controls": "git://github.com/Rise-Vision/component-google-spreadsheet-controls",
-    "component-google-drive-picker": "git://github.com/Rise-Vision/component-google-drive-picker"
+    "component-google-drive-picker": "git://github.com/Rise-Vision/component-google-drive-picker",
+    "rv-loading": "git://github.com/Rise-Vision/rv-loading"
   },
   "overrides": {
     "rv-style-guide": {
@@ -28,7 +29,19 @@
         "dist/fonts/**.**"
       ]
     },
+    "bootstrap-sass-official": {
+      "main": {
+        "development": null,
+        "production": null
+      }
+    },
     "jquery": {
+      "main": {
+        "development": null,
+        "production": null
+      }
+    },
+    "jQuery": {
       "main": {
         "development": null,
         "production": null
@@ -41,6 +54,12 @@
       }
     },
     "angular-mocks": {
+      "main": {
+        "development": null,
+        "production": null
+      }
+    },
+    "q": {
       "main": {
         "development": null,
         "production": null
