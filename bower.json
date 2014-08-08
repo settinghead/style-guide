@@ -28,12 +28,6 @@
         "dist/fonts/**.**"
       ]
     },
-    "bootstrap-sass-official": {
-      "main": {
-        "development": null,
-        "production": null
-      }
-    },
     "jquery": {
       "main": {
         "development": null,
