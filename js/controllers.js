@@ -114,6 +114,14 @@ angular.module('styleGuideApp.controllers')
         'loading-spinner-fancy': {
           title: 'Loading Spinner (Fancy)',
           template: 'libs/rv-loading/demo.html'
+        },
+        'font-size-picker': {
+          title: 'Font Size Picker',
+          template: 'libs/bootstrap-form-components/demos/font-size-picker-demo.html'
+        },
+        'font-picker': {
+          title: 'Font Picker',
+          template: 'libs/bootstrap-form-components/demos/font-picker-demo.html'
         }
       };
 

@@ -24,7 +24,8 @@ angular.module('styleGuideApp', [
   'risevision.widget.common.url-field',
   'risevision.widget.common.google-drive-picker',
   'rvLoading',
-  'rvLoading'
+  'rvLoading',
+  'risevision.widget.common.fontpicker'
 ])
   .config(function(hljsServiceProvider) {
     hljsServiceProvider.setOptions({
