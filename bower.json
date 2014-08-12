@@ -20,6 +20,7 @@
     "angular-ui-select2": "~0.0.5",
     "component-google-spreadsheet-controls": "git://github.com/Rise-Vision/component-google-spreadsheet-controls",
     "component-google-drive-picker": "git://github.com/Rise-Vision/component-google-drive-picker",
+    "storage-selector": "git://github.com/Rise-vision/storage-client",
     "rv-loading": "git://github.com/Rise-Vision/rv-loading",
     "bootstrap-form-components": "git://github.com/Rise-Vision/bootstrap-form-components"
   },
@@ -109,6 +110,12 @@
       "main": [
         "demos/example.html",
         "dist/js/angular/google-spreadsheet-controls.js"
+      ]
+    },
+    "storage-selector": {
+      "main": [
+        "style-guide-demo/example.html",
+        "dist/**"
       ]
     },
     "component-google-drive-picker": {
