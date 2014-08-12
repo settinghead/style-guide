@@ -124,6 +124,10 @@ angular.module('styleGuideApp.controllers')
         'font-picker': {
           title: 'Font Picker',
           template: 'libs/bootstrap-form-components/demos/font-picker-demo.html'
+        },
+        'storage-selector': {
+          title: 'Storage Selector',
+          template: 'libs/storage-selector/demo/example.html'
         }
       };
 
