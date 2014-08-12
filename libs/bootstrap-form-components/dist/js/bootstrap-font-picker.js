@@ -74,7 +74,7 @@ TEMPLATES['font-picker-template.html'] = "<!-- Font Family -->\n" +
     "    </div>\n" +
     "  </div>\n" +
     "</div>\n" +
-    "";
+    ""; 
 if(!RiseVision || typeof RiseVision === 'undefined') {
   var RiseVision = { Common: {} };
 } else if(typeof RiseVision.Common === 'undefined') {
@@ -82,49 +82,49 @@ if(!RiseVision || typeof RiseVision === 'undefined') {
 }
 
 ;(function (CONFIG, RiseVision) {
-  RiseVision.Common.Utilities = (function() {
-    function loadCustomFont(family, url, contentDocument) {
-      var sheet = null;
-      var rule = "font-family: " + family + "; " + "src: url('" + url + "');";
+	RiseVision.Common.Utilities = (function() {
+		function loadCustomFont(family, url, contentDocument) {
+			var sheet = null;
+			var rule = "font-family: " + family + "; " + "src: url('" + url + "');";
 
-      if (contentDocument === null || typeof contentDocument === 'undefined') {
-        contentDocument = document;
-      }
+			if (contentDocument === null || typeof contentDocument === 'undefined') {
+				contentDocument = document;
+			}
 
-      sheet = contentDocument.styleSheets[0];
+			sheet = contentDocument.styleSheets[0];
 
-      if (sheet !== null && typeof sheet !== 'undefined') {
-        sheet.addRule("@font-face", rule);
-      }
-    }
+			if (sheet !== null && typeof sheet !== 'undefined') {
+				sheet.addRule("@font-face", rule);
+			}
+		}
 
-    function loadGoogleFont(family, contentDocument, prefix) {
+		function loadGoogleFont(family, contentDocument, prefix) {
 
-      if(!prefix) {
-        prefix = CONFIG.GOOGLE_FONT_PREFIX || 'https://fonts.googleapis.com/css?family=';
-      }
+			if(!prefix) {
+				prefix = CONFIG.GOOGLE_FONT_PREFIX || 'https://fonts.googleapis.com/css?family=';
+			}
 
-      if (contentDocument === null) {
-        contentDocument = document;
-      }
+			if (contentDocument === null) {
+				contentDocument = document;
+			}
 
-      var stylesheet = document.createElement("link");
+			var stylesheet = document.createElement("link");
 
-      stylesheet.setAttribute("rel", "stylesheet");
-      stylesheet.setAttribute("type", "text/css");
-      stylesheet.setAttribute("href", prefix +
-        family);
+			stylesheet.setAttribute("rel", "stylesheet");
+			stylesheet.setAttribute("type", "text/css");
+			stylesheet.setAttribute("href", prefix +
+				family);
 
-      if (stylesheet !== null) {
-        contentDocument.getElementsByTagName("head")[0].appendChild(stylesheet);
-      }
-    }
+			if (stylesheet !== null) {
+				contentDocument.getElementsByTagName("head")[0].appendChild(stylesheet);
+			}
+		}
 
-    return {
-      loadCustomFont: loadCustomFont,
-      loadGoogleFont: loadGoogleFont,
-    };
-  })();
+		return {
+			loadCustomFont: loadCustomFont,
+			loadGoogleFont: loadGoogleFont,
+		};
+	})();
 
 })(CONFIG, RiseVision);
 

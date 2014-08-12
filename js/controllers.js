@@ -42,6 +42,8 @@ angular.module('styleGuideApp.controllers')
 
       $scope.activeComponent = $routeParams.id ? $routeParams.id : 'action-bar';
 
+      $scope.sample = { fontSize: 12 };
+
       $scope.getTemplate = function (id) {
         // $scope.uiComponents[]
       };
@@ -218,6 +220,10 @@ angular.module('styleGuideApp.controllers')
 
       $scope.stopSpinner = function () {
         $loading.stop(["rv-loading-spinner-demo"]);
+      };
+
+      $scope.update = function () {
+        $scope.$broadcast('collectAdditionalParams');
       };
     }
   ]);

@@ -122,7 +122,8 @@
         "demos/font-size-picker-demo.html",
         "dist/js/bootstrap-font-size-picker.js",
         "demos/font-picker-demo.html",
-        "dist/js/angular/bootstrap-font-picker-angular-directive.js",
+        "dist/js/angular/bootstrap-font-picker.js",
+        "dist/js/angular/bootstrap-font-size-picker.js",
         "dist/js/bootstrap-font-picker.js"
       ]
     },
@@ -133,5 +134,9 @@
         "dist/img/bootstrap-formhelpers-googlefonts.png"
       ]
     }
+  },
+  "resolutions": {
+    "angular": "1.2.18",
+    "jQuery": "1.11.0"
   }
 }
