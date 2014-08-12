@@ -20,7 +20,8 @@
     "angular-ui-select2": "~0.0.5",
     "component-google-spreadsheet-controls": "git://github.com/Rise-Vision/component-google-spreadsheet-controls",
     "component-google-drive-picker": "git://github.com/Rise-Vision/component-google-drive-picker",
-    "rv-loading": "git://github.com/Rise-Vision/rv-loading"
+    "rv-loading": "git://github.com/Rise-Vision/rv-loading",
+    "bootstrap-form-components": "git://github.com/Rise-Vision/bootstrap-form-components"
   },
   "overrides": {
     "rv-style-guide": {
@@ -33,6 +34,12 @@
       "main": [
         "assets/javascripts/bootstrap.js"
       ]
+    },
+    "bootstrap": {
+      "main": {
+        "development": null,
+        "production": null
+      }
     },
     "jquery": {
       "main": {
@@ -109,6 +116,27 @@
         "demos/example.html",
         "dist/js/angular/google-drive-picker.js"
       ]
+    },
+    "bootstrap-form-components": {
+      "main": [
+        "demos/font-size-picker-demo.html",
+        "dist/js/bootstrap-font-size-picker.js",
+        "demos/font-picker-demo.html",
+        "dist/js/angular/bootstrap-font-picker.js",
+        "dist/js/angular/bootstrap-font-size-picker.js",
+        "dist/js/bootstrap-font-picker.js"
+      ]
+    },
+    "rv-bootstrap-formhelpers": {
+      "main": [
+        "dist/js/rv-bootstrap-formhelpers.js",
+        "dist/css/rv-bootstrap-formhelpers.css",
+        "dist/img/bootstrap-formhelpers-googlefonts.png"
+      ]
     }
+  },
+  "resolutions": {
+    "angular": "1.2.18",
+    "jQuery": "1.11.0"
   }
 }

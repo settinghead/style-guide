@@ -42,6 +42,8 @@ angular.module('styleGuideApp.controllers')
 
       $scope.activeComponent = $routeParams.id ? $routeParams.id : 'action-bar';
 
+      $scope.sample = { fontSize: 12 };
+
       $scope.getTemplate = function (id) {
         // $scope.uiComponents[]
       };
@@ -114,6 +116,14 @@ angular.module('styleGuideApp.controllers')
         'loading-spinner-fancy': {
           title: 'Loading Spinner (Fancy)',
           template: 'libs/rv-loading/demo.html'
+        },
+        'font-size-picker': {
+          title: 'Font Size Picker',
+          template: 'libs/bootstrap-form-components/demos/font-size-picker-demo.html'
+        },
+        'font-picker': {
+          title: 'Font Picker',
+          template: 'libs/bootstrap-form-components/demos/font-picker-demo.html'
         }
       };
 
@@ -210,6 +220,10 @@ angular.module('styleGuideApp.controllers')
 
       $scope.stopSpinner = function () {
         $loading.stop(["rv-loading-spinner-demo"]);
+      };
+
+      $scope.update = function () {
+        $scope.$broadcast('collectAdditionalParams');
       };
     }
   ]);
