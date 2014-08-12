@@ -68,7 +68,7 @@ gulp.task('dev', function() {
     .pipe(connect.reload());
 
   gulp.watch('./bower_components/rv-style-guide/dist/css/rise.min.css', ['refreshCSS']);
-  gulp.watch('./bower_components/storage-selector/demo/example.html', ['pickFromBower']);
+  gulp.watch('./bower_components/storage-selector/style-guide-demo/example.html', ['pickFromBower']);
 });
 
 gulp.task('default', [], function() {

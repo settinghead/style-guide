@@ -127,7 +127,7 @@ angular.module('styleGuideApp.controllers')
         },
         'storage-selector': {
           title: 'Storage Selector',
-          template: 'libs/storage-selector/demo/example.html'
+          template: 'libs/storage-selector/style-guide-demo/example.html'
         }
       };
 
