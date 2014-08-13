@@ -95,10 +95,6 @@ angular.module('styleGuideApp.controllers')
           title: 'Placeholder Text',
           template: 'components/bootstrap-based/placeholder.html'
         },
-        'loading': {
-          title: 'Loading Spinner (Basic)',
-          template: 'components/bootstrap-based/loading.html'
-        },
         'buttons': {
           title: 'Standard Buttons',
           template: 'components/bootstrap-based/buttons.html'
@@ -115,8 +111,8 @@ angular.module('styleGuideApp.controllers')
           title: 'Google Drive Picker',
           template: 'libs/component-google-drive-picker/demos/example.html'
         },
-        'loading-spinner-fancy': {
-          title: 'Loading Spinner (Fancy)',
+        'loading-spinner': {
+          title: 'Loading Spinner',
           template: 'libs/rv-loading/demo.html'
         },
         'font-size-picker': {
