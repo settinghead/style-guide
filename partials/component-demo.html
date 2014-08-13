@@ -4,7 +4,7 @@
     <h1 class="page">Building a Demo Page for Your Component</h1>
   </div>
 
-  <p>To build a demo for your component start by downloading the <code>example.html</code> file from the link below. Include this file within your component repository in the top level directory eg: <code>my-component/example.html</code>. The Style-Guide will include all components and their dependencies using Bower.</p>
+  <p>To build a demo for your component start by downloading the <code>example.html</code> file from the link below. Include this file within your component repository eg: <code>my-component/style-guide-demo/example.html</code>. The Style-Guide is set up to include all components and their dependencies using Bower.</p>
 
   <p>The Style-Guide is a simple AngularJS app where each component is provided it's own route. The <code>example.html</code> file in your component repository will be used as the template for this route. Therefore, you can maintain the component and the demo independent of the Style-Guide.</p>
 
@@ -33,7 +33,7 @@
       <hljs include="'code-snippet-example-2'"></hljs>
     </div>
   </div>
-<!-- Code Snippet -->
+
 <script type="text/ng-template" id="code-snippet-example-1">
 <hljs>
   Code goes here ....
@@ -43,13 +43,55 @@
 <script type="text/ng-template" id="code-snippet-example-2">
 <!--  Example of how to use inline
   templates with the directive -->
-<hljs include="'code-snippet-example-2'"></hljs>
+<hljs include="'code-snippet-template'"></hljs>
 
 <!-- Inline template with code snippet -->
-<script type="text/ng-template" id="id-of template">
+<script type="text/ng-template" id="code-snippet-template">
   Code goes here ....
 < /script>
 </script>
-<!-- END Code Snippet -->
 
+  <h2>Updating the style guide with your new component demo</h2>
+  <p>The style guide must be set up to include the new component by updating the following
+  files:</p>
+  <ul>
+    <li>bower.json</li>
+    <li>js/controllers.json</li>
+  </ul>
+
+  <h4>bower.json</h4>
+  <p>Add your git repository url to the list of dependencies then add your repository to the 
+  overrides section.  This section specifies the exact files that will be used and they are 
+  populated via gulp pickFromBower<p>
+
+  <h4>js/controllers.json</h4>
+  <p>Add your component to the $scope.uiComponents list.  The template specifies the libs 
+  target containing your component files that are placed via gulp pickFromBower</p>
+
+  <h2>Testing your style guide page locally</h2>
+  <p>First, set up a virtual bower link so that you don't have to run bower update when
+  you make changes to your component.</p>
+  <hljs>
+    cd /path/to/your/repo
+    bower link
+    cd /path/to/your/local/style-guide
+    bower link your-component-name name-in-style-guide
+  </hljs>
+
+  <p>Now set up a watcher in the gulp file watching for changes to your example page</p>
+  <hljs>
+  gulp.watch('./bower_components/storage-selector/style-guide-demo/example.html', ['pickFromBower']);
+  </hljs>
+  <p>The bower_components target is actually symlinking to your components repo directory
+  as per the previous step</p>
+
+  <p>Now run gulp dev and start modifying your example page.  Once you're done you can
+  optionally remove the change to the gulpfile and submit a pull request for both repositories.
+  On subsequent modifications to your example page a pull request to the style guide is not
+  necessary.  Just let the maintainer know and they will run bower update to pull in your
+  new example page and update the master and gh-pages branches.</p>
+
+  <h2>A note on github io pages</h2>
+  <p>After merging new changes into the style guide they might now show up immediately
+  on the github.io domain.  A delay of five minutes or so is common.</p>
 </div>
