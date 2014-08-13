@@ -44,6 +44,8 @@ angular.module('styleGuideApp.controllers')
 
       $scope.sample = { fontSize: 12 };
 
+      $scope.background = {};
+
       $scope.getTemplate = function (id) {
         // $scope.uiComponents[]
       };
@@ -128,6 +130,10 @@ angular.module('styleGuideApp.controllers')
         'storage-selector': {
           title: 'Storage Selector',
           template: 'libs/storage-selector/style-guide-demo/example.html'
+        },
+        'background-setting': {
+          title: 'Background Setting',
+          template: 'libs/widget-settings-ui-components/demos/background-demo.html'
         }
       };
 

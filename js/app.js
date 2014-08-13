@@ -23,6 +23,7 @@ angular.module('styleGuideApp', [
   'risevision.widget.common.google-spreadsheet-controls',
   'risevision.widget.common.url-field',
   'risevision.widget.common.google-drive-picker',
+  'risevision.widget.common.background-setting',
   'rvLoading',
   'rvLoading',
   'risevision.widget.common.fontpicker',
