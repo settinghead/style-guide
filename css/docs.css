@@ -12,7 +12,7 @@ pre,
 	border-radius: 2px;
 	min-height: auto;
 	max-height: 340px;
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 
 .fixed > pre {
