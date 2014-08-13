@@ -103,7 +103,8 @@
         "dist/js/font-style.min.js",
         "dist/js/angular/font-style.min.js",
         "dist/js/angular/url-field.js",
-        "dist/js/url-field.js"
+        "dist/js/url-field.js",
+        "dist/js/angular/background-setting.js"
       ]
     },
     "component-google-spreadsheet-controls": {
