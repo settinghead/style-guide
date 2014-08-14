@@ -24,8 +24,7 @@ angular.module('styleGuideApp', [
   'risevision.widget.common.url-field',
   'risevision.widget.common.google-drive-picker',
   'risevision.widget.common.background-setting',
-  'rvLoading',
-  'rvLoading',
+  'risevision.common.loading',
   'risevision.widget.common.fontpicker',
   'risevision.widget.common.fontsizepicker'
 ])
