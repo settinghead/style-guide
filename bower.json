@@ -1,5 +1,5 @@
 {
-  "name": "rv-style-guide-docs",
+  "name": "rv-style-guide",
   "version": "0.1.0",
   "license": "MIT",
   "private": false,
@@ -12,7 +12,7 @@
     "www"
   ],
   "dependencies": {
-    "style-guide": "git://github.com/Rise-Vision/style-guide",
+    "rv-common-style": "git://github.com/Rise-Vision/common-style",
     "component-financial-selector": "git://github.com/Rise-Vision/component-financial-selector",
     "widget-settings-ui-components": "git://github.com/Rise-Vision/widget-settings-ui-components",
     "angular-translate": "~2.2.0",
@@ -25,7 +25,7 @@
     "bootstrap-form-components": "git://github.com/Rise-Vision/bootstrap-form-components"
   },
   "overrides": {
-    "rv-style-guide": {
+    "rv-common-style": {
       "main": [
         "dist/css/rise.min.css",
         "dist/fonts/**.**"
@@ -145,7 +145,6 @@
   },
   "resolutions": {
     "angular": "1.2.18",
-    "jQuery": "1.11.0",
-    "bootstrap": "~3.2.0"
+    "jQuery": "1.11.0"
   }
 }

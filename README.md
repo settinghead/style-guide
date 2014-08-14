@@ -1,4 +1,4 @@
-Rise Vision Style Guide Docs
+Rise Vision Style Guide
 ==============
 
 **Copyright © 2014 - Rise Vision Incorporated.**
@@ -6,8 +6,8 @@ Rise Vision Style Guide Docs
 *Use of this software is governed by the GPLv3 license (available in the LICENSE file).*
 
 ## Introduction
-Reference documentation for all Rise Vision style-guide. It is published as github pages is available at:
-**http://rise-vision.github.io/style-guide-docs**
+Reference documentation for all Rise Vision common-style. It is published as github pages is available at:
+**http://rise-vision.github.io/style-guide**
 
 
 ## Installation
