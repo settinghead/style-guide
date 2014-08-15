@@ -47,8 +47,8 @@ gulp.task("json-combine", ["json-move"], function() {
 });
 
 gulp.task('refreshCSS', function() {
-  return gulp.src('./bower_components/rv-style-guide/dist/css/**.css')
-    .pipe(gulp.dest('./libs/rv-style-guide/dist/css'))
+  return gulp.src('./bower_components/rv-common-style/dist/css/**.css')
+    .pipe(gulp.dest('./libs/rv-common-style/dist/css'))
     .pipe(connect.reload());
 });
 
@@ -67,7 +67,7 @@ gulp.task('dev', function() {
   })
     .pipe(connect.reload());
 
-  gulp.watch('./bower_components/rv-style-guide/dist/css/rise.min.css', ['refreshCSS']);
+  gulp.watch('./bower_components/rv-common-style/dist/css/rise.min.css', ['refreshCSS']);
   gulp.watch('./bower_components/storage-selector/style-guide-demo/example.html', ['pickFromBower']);
 });
 
