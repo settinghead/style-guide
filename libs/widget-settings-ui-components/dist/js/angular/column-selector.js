@@ -84,7 +84,7 @@ app.run(["$templateCache", function($templateCache) {
     "	<div class=\"tags\">\n" +
     "		<span ng-repeat=\"column in columnNames\" ng-hide=\"column.show\" class=\"label label-primary\"\n" +
     "		ng-click=\"add(column)\">\n" +
-    "			{{column.name}}\n" +
+    "			{{'columns.' + column.name | translate}}\n" +
     "			<span class=\"glyphicon glyphicon-plus\"></span>\n" +
     "		</span>\n" +
     "	</div>\n" +
