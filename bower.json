@@ -22,7 +22,8 @@
     "component-google-drive-picker": "git://github.com/Rise-Vision/component-google-drive-picker",
     "storage-selector": "git://github.com/Rise-vision/storage-client",
     "rv-loading": "git://github.com/Rise-Vision/rv-loading",
-    "bootstrap-form-components": "git://github.com/Rise-Vision/bootstrap-form-components"
+    "bootstrap-form-components": "git://github.com/Rise-Vision/bootstrap-form-components",
+    "widget-settings-ui-core": "git://github.com/Rise-Vision/widget-settings-ui-core"
   },
   "overrides": {
     "rv-common-style": {
@@ -140,6 +141,11 @@
         "dist/js/rv-bootstrap-formhelpers.js",
         "dist/css/rv-bootstrap-formhelpers.css",
         "dist/img/bootstrap-formhelpers-googlefonts.png"
+      ]
+    },
+    "widget-settings-ui-core": {
+      "main": [
+        "dist/widget-settings-ui-core.js"
       ]
     }
   },
