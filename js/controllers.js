@@ -138,6 +138,10 @@ angular.module('styleGuideApp.controllers')
         'background-setting': {
           title: 'Background Setting',
           template: 'libs/widget-settings-ui-components/demos/background-demo.html'
+        },
+        'close-button': {
+          title: 'Close Button',
+          template: 'components/bootstrap-based/close-button.html'
         }
       };
 
