@@ -26,7 +26,8 @@ angular.module('styleGuideApp', [
   'risevision.widget.common.background-setting',
   'risevision.common.loading',
   'risevision.widget.common.fontpicker',
-  'risevision.widget.common.fontsizepicker'
+  'risevision.widget.common.fontsizepicker',
+  'risevision.widget.common.translate'
 ])
   .config(function(hljsServiceProvider) {
     hljsServiceProvider.setOptions({
@@ -60,4 +61,15 @@ angular.module('styleGuideApp', [
           redirectTo: '/'
         });
     }
-  ]);
+  ])
+  .config(["$translateProvider", function ($translateProvider) {
+    $translateProvider.useStaticFilesLoader({
+      prefix: "locales/",
+      suffix: "/translation.json"
+    });
+    $translateProvider.determinePreferredLanguage();
+    if($translateProvider.preferredLanguage().indexOf("en_") === 0){
+      //default to "en" on any of the English variants
+      $translateProvider.preferredLanguage("en");
+    }
+  }]);
