@@ -109,5 +109,11 @@
     "yield": "Yield",
     "yield-change": "Yield Change",
     "trade-time": "Trade Time"
+  },
+  "background": {
+    "heading": "Background",
+    "color": {
+      "label": "Color"
+    }
   }
 }
