@@ -103,6 +103,10 @@ angular.module('styleGuideApp.controllers')
           title: 'Standard Buttons',
           template: 'components/bootstrap-based/buttons.html'
         },
+        'edit button': {
+          title: 'Edit Button',
+          template: 'components/bootstrap-based/edit-button.html'
+        },
         'google-spreadsheet-controls': {
           title: 'Google Spreadsheet Controls',
           template: 'libs/component-google-spreadsheet-controls/demos/example.html'
