@@ -103,7 +103,7 @@ angular.module('styleGuideApp.controllers')
           title: 'Standard Buttons',
           template: 'components/bootstrap-based/buttons.html'
         },
-        'edit button': {
+        'edit-button': {
           title: 'Edit Button',
           template: 'components/bootstrap-based/edit-button.html'
         },

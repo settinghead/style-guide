@@ -1,16 +1,7 @@
-
-
-
 <script type="text/ng-template" id="edit-button">
-<div class="col-xs-1">
-  <ul class="list-unstyled pull-right address-icons">
-    <li>
-      <a href="" class="btn-box" popover="Edit This Form" popover-trigger="mouseenter" popover-placement="left">
-        <i class="glyphicons pencil"></i>
-      </a>
-    </li>
-  </ul>
-</div>
+<button ng-click="clickAction()" class="btn btn-default btn-box" popover="Edit This Form" popover-trigger="mouseenter" popover-placement="left">
+	<i class="glyphicons pencil"></i>
+</button>
 </script>
 
 <h2 class="add-bottom">Edit Button</h2>
@@ -23,13 +14,10 @@
 <h3>Script Includes</h3>
 <p>Make sure you include the following files in <code>index.html</code></p>
 <hljs>
-bower_components/bootstrap/bootstrap.css
 bower_components/angular-bootstrap/tooltip/tooltip.js
 </hljs>
 <h3>Usage</h3>
 <hljs include="'edit-button'"></hljs>
 
 <h3>Examples</h3>
-<!-- <div class="add-bottom"> -->
-  <ng-include src="'edit-button'"></ng-include>
-<!-- </div> -->
+<ng-include src="'edit-button'"></ng-include>
