@@ -142,6 +142,10 @@ angular.module('styleGuideApp.controllers')
         'close-button': {
           title: 'Close Button',
           template: 'components/bootstrap-based/close-button.html'
+        },
+        'widget-icons': {
+          title: 'Widget Icons',
+          template: 'components/bootstrap-based/widget-icons.html'
         }
       };
 
