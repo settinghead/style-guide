@@ -87,6 +87,10 @@ angular.module('styleGuideApp.controllers')
           title: 'Tooltip',
           template: 'libs/widget-settings-ui-components/demos/tooltip-demo.html'
         },
+        'ui-tooltip': {
+          title: 'UI Tooltip',
+          template: 'components/bootstrap-based/ui-tooltip.html'
+        },
         'font-style': {
           title: 'Font Style',
           template: 'libs/widget-settings-ui-components/demos/font-style-demo.html'
@@ -197,6 +201,11 @@ angular.module('styleGuideApp.controllers')
         "WMT.N",
         "XOM.N"
       ];
+
+      $scope.dynamicTooltip = 'Hello, World!';
+      $scope.dynamicTooltipText = 'dynamic';
+      $scope.htmlTooltip = 'I\'ve been made <b>bold</b>!';
+
 
       $scope.alignText = 'right';
       $scope.spreadsheet = {};
