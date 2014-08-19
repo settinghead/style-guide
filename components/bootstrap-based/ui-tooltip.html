@@ -9,18 +9,18 @@
       <input type="text" ng-model="dynamicTooltip" class="form-control">
     </div>
     <p>
-      <a href="" tooltip="{{dynamicTooltip}}">{{dynamicTooltipText}}</a><br/>
-      <a href="" tooltip-placement="left" tooltip="On the Left!">left</a> <br/>
-      <a href="" tooltip-animation="false" tooltip="I don't fade. :-(">fading</a><br/>
-      <a href="" tooltip-popup-delay='1000' tooltip='appears with delay'>delayed</a><br/>
+      <a href="" tooltip-trigger="click" tooltip="{{dynamicTooltip}}">{{dynamicTooltipText}}</a><br/>
+      <a href="" tooltip-trigger="click" tooltip-placement="left" tooltip="On the Left!">left</a> <br/>
+      <a href="" tooltip-trigger="click" tooltip-animation="false" tooltip="I don't fade. :-(">fading</a><br/>
+      <a href="" tooltip-trigger="click" tooltip-popup-delay='1000' tooltip='appears with delay'>delayed</a><br/>
     </p>
-    <p> Or can even contain <a href="" tooltip-html-unsafe="{{htmlTooltip}}">HTML</a> </p>
+    <p> Or can even contain <a href="" tooltip-trigger="click" tooltip-html-unsafe="{{htmlTooltip}}">HTML</a> </p>
 </div>
 </script>
 
 <h2 class="add-bottom">UI Tooltip</h2>
 
-<p>A lightweight, extensible directive for fancy tooltip creation. The tooltip directive supports multiple placements, optional transition animation, and more.
+<p>A lightweight, extensible directive for fancy tooltip creation. The tooltip directive supports multiple placements, optional transition animation, and more. For use in RiseVision, the tooltip trigger should be `click`.
 
  This library can be used to build more complex examples, see <a href="http://angular-ui.github.io/bootstrap/">UI Bootstrap</a> for more info.</p>
 
