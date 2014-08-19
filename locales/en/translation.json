@@ -13,6 +13,7 @@
     }
   },
   "scroll": {
+    "heading" : "Scrolling",
     "by": {
       "label": "Scrolling",
       "none": "None",
