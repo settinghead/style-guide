@@ -71,6 +71,9 @@ app.run(["$templateCache", function($templateCache) {
     "            <label for=\"column-header-text\">\n" +
     "              {{'column.header-text.label' | translate}}\n" +
     "            </label>\n" +
+    "            <tooltip data-toggle=\"popover\" data-placement=\"right\"\n" +
+    "              data-content=\"{{'column.header-text.tooltip' | translate}}\">\n" +
+    "            </tooltip>\n" +
     "            <input id=\"column-header-text\" type=\"text\" ng-model=\"column.headerText\" class=\"form-control\" />\n" +
     "          </div>\n" +
     "        </div>\n" +
@@ -80,8 +83,11 @@ app.run(["$templateCache", function($templateCache) {
     "        <div class=\"col-md-3\">\n" +
     "          <div class=\"form-group\">\n" +
     "            <label for=\"column-width\">\n" +
-    "              {{'column.width' | translate}}\n" +
+    "              {{'column.width.label' | translate}}\n" +
     "            </label>\n" +
+    "            <tooltip data-toggle=\"popover\" data-placement=\"right\"\n" +
+    "              data-content=\"{{'column.width.tooltip' | translate}}\">\n" +
+    "            </tooltip>\n" +
     "            <input id=\"column-width\" type=\"text\" ng-model=\"column.width\" class=\"form-control\" />\n" +
     "          </div>\n" +
     "        </div>\n" +
