@@ -84,7 +84,7 @@ angular.module('styleGuideApp.controllers')
           template: 'libs/widget-settings-ui-components/demos/table-setting-demo.html'
         },
         'tooltip': {
-          title: 'Tooltip',
+          title: 'Tooltip (DEPRECIATED)',
           template: 'libs/widget-settings-ui-components/demos/tooltip-demo.html'
         },
         'ui-tooltip': {
