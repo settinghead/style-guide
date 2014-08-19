@@ -1,34 +1,37 @@
-<div class="component">
-  <div class="page-header">
-    <h1 class="page">Table Setting</h1>
-  </div>
+<h1>Font Setting</h1>
 
-  <p class="lead">An Angular directive used to format a table</p>
+<p class="lead">Directive that allows font configuration</p>
 
-  <p>Note: Font selection is currently broken in this directive</p>
+<p>
+  <strong>Dependencies</strong>
+  <span class="label label-info">Angular</span>
+  <span class="label label-info">jQuery</span>
+  <span class="label label-info">font-picker</span>
+  <span class="label label-info">font-size-picker</span>
+  <span class="label label-info">font-setting</span>
+  <span class="label label-info">color-picker</span>
+  <span class="label label-info">alignment</span>
+</p>
 
-  <p>
-    <strong>Dependencies</strong>
-    <span class="label label-info">font-setting</span>
-    <span class="label label-info">color-picker</span>
-    <span class="label label-info">spectrum</span>
-  </p>
+<h3>Usage</h3>
+<ul>
+  <li>Include the following files:
+    <hljs include="'angular-script-includes'"></hljs>
+  </li>
+  <li>Add the directive:
+    <hljs>
+<font-setting font-data="font" preview-text="Sample Text"></font-setting>
+    </hljs>
+  </li>
+</ul>
 
-  <h3 class="add-top">Usage</h3>
-  <hljs include="'table-setting-usage'"></hljs>
-
-  <h3>Script Includes</h3>
-  <p>Make sure you include the following files in <code>index.html</code></p>
-  <hljs include="'script-includes'"></hljs>
-
-  <!-- Dynamic Example -->
-  <div class="examples">
-    <h3>Example</h3>
-			<table-setting table="table"></table-setting>
-  </div>
+<!-- Dynamic Example -->
+<div class="examples">
+  <h3>Example</h3>
+  <font-setting font-data="font" preview-text="Sample Text"></font-setting>
 </div>
 
-<script type="text/ng-template" id="script-includes">
+<script type="text/ng-template" id="angular-script-includes">
 /bower_components/widget-settings-ui-components/dist/css/widget-settings-ui-components.min.css
 /bower_components/spectrum/spectrum.css
 /bower_components/bootstrap-select/bootstrap-select.css
@@ -51,13 +54,4 @@
 /bower_components/widget-settings-ui-components/dist/js/font-style.min.js
 /bower_components/widget-settings-ui-components/dist/js/angular/font-style.min.js
 /bower_components/widget-settings-ui-components/dist/js/angular/font-setting.min.js
-
-/bower_components/widget-settings-ui-components/dist/js/angular/table-setting.js
-</script>
-
-    <!-- Code Snippet -->
-<script type="text/ng-template" id="table-setting-usage">
-<form role="form">
-	<table-setting table="settings.additionalParams.table"></table-setting>
-</form>
 </script>

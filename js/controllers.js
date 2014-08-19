@@ -91,6 +91,10 @@ angular.module('styleGuideApp.controllers')
           title: 'UI Tooltip',
           template: 'components/bootstrap-based/ui-tooltip.html'
         },
+        'font-setting': {
+          title: 'Font Setting',
+          template: 'libs/widget-settings-ui-components/demos/font-setting-demo.html'
+        },
         'font-style': {
           title: 'Font Style',
           template: 'libs/widget-settings-ui-components/demos/font-style-demo.html'
@@ -213,6 +217,8 @@ angular.module('styleGuideApp.controllers')
         "WMT.N",
         "XOM.N"
       ];
+      $scope.font = {
+      };
 
       $scope.dynamicTooltip = 'Hello, World!';
       $scope.dynamicTooltipText = 'dynamic';
