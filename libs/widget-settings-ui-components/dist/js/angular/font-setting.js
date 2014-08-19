@@ -28,7 +28,7 @@
             italic: false,
             underline: false,
             color: "black",
-            highlightColor: "transparent",
+            backgroundColor: "transparent",
             align: "left"
           };
 
@@ -69,7 +69,7 @@
               previewEl.css("font-style", fontData.italic ? "italic" : "normal");
               previewEl.css("text-decoration", fontData.underline ? "underline" : "none");
               previewEl.css("color", fontData.color);
-              previewEl.css("background-color", fontData.highlightColor);
+              previewEl.css("background-color", fontData.backgroundColor);
 
               parentEl.css("text-align", fontData.align);
             }
@@ -101,7 +101,7 @@ app.run(["$templateCache", function($templateCache) {
     "        <input color-picker type=\"text\" color=\"fontData.color\" />\n" +
     "      </li>\n" +
     "      <li class=\"pull-left\">\n" +
-    "        <input color-picker type=\"highlight\" color=\"fontData.highlightColor\" />\n" +
+    "        <input color-picker type=\"background\" color=\"fontData.backgroundColor\" />\n" +
     "      </li>\n" +
     "      <li class=\"pull-left\">\n" +
     "        <alignment align=\"fontData.align\"></alignment>\n" +

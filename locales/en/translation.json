@@ -35,11 +35,11 @@
     }
   },
   "scroll": {
-    "heading": "Scrolling",
+    "heading": "Scroll",
     "by": {
-      "none": "None",
-      "continuous": "Continuous",
-      "page": "Page"
+      "none": "No",
+      "continuous": "Continuously",
+      "page": "By Page"
     },
     "speed": {
       "label": "Scroll Speed",
@@ -76,7 +76,10 @@
       "center": "Center",
       "right": "Right"
     },
-    "width": "Width",
+    "width": {
+      "label": "Width",
+      "tooltip": "Width of the column"
+    },
     "decimals": {
       "label": "Decimals"
     },
@@ -93,7 +96,8 @@
       "positive-red": "Positive value red negative green"
     },
     "header-text": {
-      "label": "Header Text"
+      "label": "Header Text",
+      "tooltip": "If header text is entered here then it will override the header in the spreadsheet"
     }
   },
   "url": {
