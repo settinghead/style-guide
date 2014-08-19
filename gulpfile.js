@@ -19,7 +19,7 @@ gulp.task("json-move", function() {
   // in case some files have the same name
   var index = 0;
   return gulp.src(["src/locales/en/*.json",
-    "bower_components/*/dist/locales/en/*.json"])
+    "bower_components/*/dist/locales/en/*.json", "locales/en/columns.json"])
     .pipe(rename(function (path) {
       path.dirname = "";
       path.basename += index++;
