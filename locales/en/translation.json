@@ -1,4 +1,26 @@
 {
+  "spreadsheet": {
+    "header": "Spreadsheet",
+    "select": "Select Spreadsheet",
+    "cells": {
+      "label": "Include",
+      "sheet": "Entire Sheet",
+      "range": "Range"
+    },
+    "range": {
+      "label": "Range",
+      "tooltip": "Range of cells in the format A1:B10"
+    },
+    "sheet": "Worksheet",
+    "headerRow": {
+      "label": "Header Row",
+      "tooltip": "Specify if there is a header row or not. If so it will be excluded from the data and assigned as a column label in the data table."
+    },
+    "refresh": {
+      "label": "Data Refresh Interval (seconds)",
+      "tooltip": "How often to check the spreadsheet for new data"
+    }
+  },
   "common": {
     "buttons": {
       "save": "Save",
@@ -13,9 +35,8 @@
     }
   },
   "scroll": {
-    "heading" : "Scrolling",
+    "heading": "Scrolling",
     "by": {
-      "label": "Scrolling",
       "none": "None",
       "continuous": "Continuous",
       "page": "Page"
@@ -34,28 +55,19 @@
     }
   },
   "table": {
+    "col-row-heading": "Column / Row Format",
     "row-padding": "Row Padding (pixels)",
     "col-padding": "Column Padding (pixels)",
+    "row-color": "Row Color",
+    "alt-row-color": "Alternate Row Color",
     "col-header-font": {
-      "font": "Column Header Font",
-      "font-url": "Column Header Font URL",
-      "font-size": "Column Header Font Size",
-      "modal-title": "Fonts",
-      "font-variants": "Font Variants",
-      "color": "Column Header Color",
+      "heading": "Header Format",
       "text": "Column Header Sample Text"
     },
     "data-font": {
-      "font": "Data Font",
-      "font-url": "Data Font URL",
-      "font-size": "Data Font Size",
-      "modal-title": "Fonts",
-      "font-variants": "Font Variants",
-      "color": "Data Color",
+      "heading": "Data Format",
       "text": "Data Sample Text"
-    },
-    "row-color": "Row Color",
-    "alt-row-color": "Alternate Row Color"
+    }
   },
   "column": {
     "alignment": {
@@ -88,28 +100,9 @@
       "tooltip": "If header text is entered here then it will override the header in the spreadsheet"
     }
   },
-  "columns": {
-    "label": "Select Field(s) to Display",
-    "error": {
-      "required": "Please add some fields to the table."
-    },
-    "instrument": "Instrument",
-    "instrument-logo": "Instrument Logo",
-    "instrument-name": "Instrument Name",
-    "last-price": "Last Price",
-    "previous-close": "Previous Close",
-    "change": "Change",
-    "percent-change": "% Change",
-    "accumulated-volume": "Accumulated Volume",
-    "day-high": "Day High",
-    "day-low": "Day Low",
-    "52-week-high": "52 Week High",
-    "52-week-low": "52 Week Low",
-    "bid": "Bid",
-    "ask": "Ask",
-    "yield": "Yield",
-    "yield-change": "Yield Change",
-    "trade-time": "Trade Time"
+  "url": {
+    "label": "URL",
+    "validate": "Validate URL"
   },
   "background": {
     "heading": "Background",
