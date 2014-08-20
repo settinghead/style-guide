@@ -1,4 +1,4 @@
-Rise Vision Style Guide
+Rise Vision Style Guide [![Build Status](http://107.170.20.223:8080/job/Rise-Vision-Style-Guide-Github-Page/badge/icon)](http://107.170.20.223:8080/job/Rise-Vision-Style-Guide-Github-Page/)
 ==============
 
 **Copyright © 2014 - Rise Vision Incorporated.**
