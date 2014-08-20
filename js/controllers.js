@@ -84,12 +84,12 @@ angular.module('styleGuideApp.controllers')
           template: 'libs/widget-settings-ui-components/demos/table-setting-demo.html'
         },
         'tooltip': {
-          title: 'Tooltip (DEPRECIATED)',
+          title: 'Tooltip (DEPRECATED)',
           template: 'libs/widget-settings-ui-components/demos/tooltip-demo.html'
         },
-        'ui-tooltip': {
-          title: 'UI Tooltip',
-          template: 'components/bootstrap-based/ui-tooltip.html'
+        'ui-popover': {
+          title: 'UI Popover',
+          template: 'components/bootstrap-based/ui-popover.html'
         },
         'font-setting': {
           title: 'Font Setting',
