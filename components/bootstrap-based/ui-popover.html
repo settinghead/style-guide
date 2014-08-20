@@ -8,18 +8,20 @@
 
 <p>A lightweight, extensible directive for fancy popover creation. The popover directive supports multiple placements, optional transition animation, and more. For Risevision, the trigger should be set to 'click' so that it will work on mobile devices.
 
- This library can be used to build more complex examples, see <a href="http://angular-ui.github.io/bootstrap/">UI Popover</a> for more info.</p>
+This library can be used to build more complex examples, see <a href="http://angular-ui.github.io/bootstrap/">UI Popover</a> for more info.</p>
 
-<p class="add-bottom"><strong>Dependencies</strong> <span class="label label-info">bootstrap CSS</span> <span class="label label-info">angular</span><span class="label label-info">UI Tooltip</span></p>
+<p class="add-bottom"><strong>Dependencies</strong> <span class="label label-info">bootstrap CSS</span> <span class="label label-info">angular</span> <span class="label label-info">UI Bootstrap</span></p>
+
+<h3>Module Includes</h3>
+<p>Declare a dependency on the ui. in your module:</p>
+<code>angular.module('myApp', ['ui.bootstrap']);</code>
 
 
 <h3>Script Includes</h3>
 <p>Make sure you include the following files in <code>index.html</code></p>
 <hljs>
-bower_components/bootstrap/bootstrap.css
 bower_components/angular/angular.js
-bower_components/angular-bootstrap/tooltip/tooltip.js
-bower_components/angular-bootstrap/popover/popover.js
+bower_components/angular-bootstrap/ui-bootstrap-tpls.js
 </hljs>
 <h3>Usage</h3>
 <hljs include="'ui-popover'"></hljs>
