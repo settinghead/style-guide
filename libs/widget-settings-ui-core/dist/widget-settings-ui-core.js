@@ -97,8 +97,6 @@ angular.module('risevision.widget.common')
       var deferred = $q.defer();
       var alerts = [];
 
-      settings = processSettings(settings);
-
       if (validator) {
         alerts = validator(settings);
       }
@@ -124,16 +122,6 @@ angular.module('risevision.widget.common')
 
       return deferred.promise;
     };
-
-    function processSettings(settings) {
-      var newSettings = angular.copy(settings);
-
-      delete newSettings.params.id;
-      delete newSettings.params.rsW;
-      delete newSettings.params.rsH;
-
-      return newSettings;
-    }
 
   }])
 
@@ -182,14 +170,7 @@ angular.module('risevision.widget.common')
       var str = [];
       for(var p in params) {
         if (params.hasOwnProperty(p)) {
-          var value;
-          if (typeof params[p] === 'object') {
-            value = JSON.stringify(params[p]);
-          }
-          else {
-            value = params[p];
-          }
-          str.push('up_' + encodeURIComponent(p) + '=' + encodeURIComponent(value));
+          str.push('up_' + encodeURIComponent(p) + '=' + encodeURIComponent(params[p]));
         }
       }
       return '?' + str.join('&');
@@ -214,14 +195,9 @@ angular.module('risevision.widget.common')
       for (var i = 0; i < vars.length; i++) {
         var pair = vars[i].split('=');
         var name = stripPrefix(decodeURIComponent(pair[0]));
-        //save settings only if it has up_ prefix. Ignore otherwise
         if (name) {
-          try {
-            result[name] = JSON.parse(decodeURIComponent(pair[1]));
-          }
-          catch (e) {
-            result[name] = decodeURIComponent(pair[1]);
-          }
+          //save settings only if it has up_ prefix. Ignore otherwise
+          result[name] = decodeURIComponent(pair[1]);
         }
       }
       return result;
