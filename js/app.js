@@ -46,6 +46,9 @@ angular.module('styleGuideApp', [
           controller: 'CommonHeaderCtrl',
           templateUrl: 'partials/common-header.html'
         })
+        .when('/input', {
+          templateUrl: 'partials/input-guidelines.html'
+        })
         .when('/componentdemo', {
           templateUrl: 'partials/component-demo.html'
         })

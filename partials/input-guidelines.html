@@ -1,0 +1,260 @@
+<div class="container">
+
+  <div class="page-header">
+    <h1 class="page">Input Guidelines</h1>
+  </div>
+
+  <div class="row add-bottom">
+    <div class="col-md-12">
+      <!-- single column -->
+      <h2>Single Column</h2>
+      <p>Forms should generally be used in a single column layout view. Use of <code>col-md-12</code> is highly recommended. If a multi-column layout is <em>absolutely</em> necessary then it should collapse and turn into a single column layout on mobile/tablet.</p>
+      <p class="add-bottom">&raquo; See the <a href="http://getbootstrap.com/css/#grid-example-basic">Bootstrap documentation</a> for more info</p>
+      <!-- code -->
+      <div class="add-bottom">
+        <hljs include="'form-column'"></hljs>
+      </div>
+      <br/>
+      <!-- Labels and placeholder -->
+      <h2>Labels and Placeholder Text</h2>
+      <p class="add-bottom">Always use labels and where necessary use placeholder text to provide additional info.</p>
+      <!-- code -->
+      <div class="well add-bottom">
+        <ng-include src="'label-placeholder'"></ng-include>
+      </div>
+      <div class="add-bottom">
+        <hljs include="'label-placeholder'"></hljs>
+      </div>
+      <br/>
+      <!-- Fixed Widths -->
+      <h2>Fixed Widths/Inline Forms</h2>
+      <p><code>input</code>, <code>select</code>, and <code>textarea</code> are 100% wide by default in Bootstrap. However, in the special case where you have to use an inline form, you'll have to set widths on the form controls used within. Using <code>form-inline</code> is an easy way to achieve this.</p>
+      <p>jQuery/AngularJS plugins are not standard HTML <code>input</code> elements. Therefore, you will have to specify a <code>px</code> / <code>percent</code> width in the CSS. Or use grid classes such as <code>.col-xs-</code>, <code>.col-sm-</code>, <code>.col-md-</code> &amp; <code>.col-lg-</code></p>
+      <p class="add-bottom"><strong>Note:</strong> For viewports less than 768px wide <code>form-inline</code> will automatically collapse to a vertically stacked form.</p>
+      <!-- code -->
+      <div class="well add-bottom">
+        <ng-include src="'fixed-width-input'"></ng-include>
+      </div>
+      <div class="add-bottom">
+        <hljs include="'fixed-width-input'"></hljs>
+      </div>
+      <br/>
+      <!-- Standard elements -->
+      <h2>Standard HTML Form Controls</h2>
+      <p class="add-bottom">Use of standard form controls instead of jQuery/AngularJS plugins is recommended. This allows the user to have a familiar native UI. Also, a lot of custom plugins are not optimized for mobile/tablet.</p>
+      <!-- code -->
+      <div class="well add-bottom">
+        <ng-include src="'stadard-form-controls'"></ng-include>
+      </div>
+      <div class="add-bottom">
+        <hljs include="'stadard-form-controls'"></hljs>
+      </div>
+      <br/>
+      <!-- Structure -->
+      <h2>Structure</h2>
+      <p class="add-bottom">A typical form should be arranged such that <code>label</code> is above the <code>input</code> fields. Below is an example of Bootstrap vertical stack form. Each <code>label</code> &amp; <code>input</code> pair is wrapped in a <code>form-group</code>. This will ensure that the <code>input</code> element fills 100% width of the container and is of uniform length. Uniform widths for all <code>input</code> fields is a requirement.</p>
+      <!-- example and code -->
+      <div class="well add-bottom">
+        <ng-include src="'form-horizontal'"></ng-include>
+      </div>
+      <div class="add-bottom">
+        <hljs include="'form-horizontal'"></hljs>
+      </div>
+      <br/>
+      <!-- Checkboxes and Radio Buttons -->
+      <h2>Checkboxes &amp; Radio</h2>
+      <p class="add-bottom">Always use vertically stacked checkboxes and radio buttons</p>
+      <!-- example and code -->
+      <div class="add-bottom">
+        <ng-include src="'checkboxes-radio'"></ng-include>
+      </div>
+      <div class="add-bottom">
+        <hljs include="'checkboxes-radio'"></hljs>
+      </div>
+      <br/>
+      <!-- Validation states -->
+      <h2>Validation States</h2>
+      <p>Bootstrap includes validation styles for error, warning, and success states on form controls. Use <code>.has-warning</code>, <code>.has-error</code>, or <code>.has-success</code> classes for this. Additionally you can provide a <code>glyphicon</code> for feedback too.</p>
+
+      <p class="add-bottom">&raquo; See the <a href="http://getbootstrap.com/css/#forms-control-validation">forms control validation</a> for more info</p>
+      <!-- example and code -->
+      <div class="add-bottom">
+        <ng-include src="'validation-states'"></ng-include>
+      </div>
+      <div class="add-bottom">
+        <hljs include="'validation-states'"></hljs>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script type="text/ng-template" id="form-column">
+<div class="row">
+  <div class="col-md-12">
+    <form></form>
+  </div>
+</div>
+</script>
+
+<script type="text/ng-template" id="form-horizontal">
+<form role="form">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>
+  <button type="button" class="btn btn-success btn-fixed-width">
+    Save <i class="glyphicons white ok_2 icon-right"></i>
+  </button>
+  <button type="button" class="btn btn-primary btn-fixed-width">
+    Cancel <i class="glyphicons white remove_2 icon-right"></i>
+  </button>
+</form>
+</script>
+
+<script type="text/ng-template" id="checkboxes-radio">
+<div class="checkbox">
+  <label>
+    <input type="checkbox" value="">
+    Option one is this and that&mdash;be sure to include why it's great
+  </label>
+</div>
+<div class="checkbox disabled">
+  <label>
+    <input type="checkbox" value="" disabled>
+    Option two is disabled
+  </label>
+</div>
+
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    Option one is this and that&mdash;be sure to include why it's great
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+    Option two can be something else and selecting it will deselect option one
+  </label>
+</div>
+<div class="radio disabled">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+    Option three is disabled
+  </label>
+</div>
+</script>
+
+
+<script type="text/ng-template" id="label-placeholder">
+<div class="form-group">
+  <label for="exampleUrlInput">URL</label>
+  <input type="text" class="form-control" id="exampleUrlInput" placeholder="http://www.example.html">
+</div>
+</script>
+
+
+<script type="text/ng-template" id="fixed-width-input">
+<form class="form-inline" role="form">
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputFont">Font</label>
+    <select class="form-control">
+      <option>Pick a font</option>
+      <option>Arial Black</option>
+      <option>Comic Sans MS</option>
+      <option>Impact</option>
+      <option>Lucida Sans Unicode</option>
+      <option>Tahoma</option>
+      <option>Trebuchet MS</option>
+      <option>Verdana</option>
+      <option>Courier New</option>
+      <option>Lucida Console</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputButtons">Button Group</label>
+    <div class="btn-group">
+      <button type="button" class="btn btn-default">Left</button>
+      <button type="button" class="btn btn-default">Middle</button>
+      <button type="button" class="btn btn-default">Right</button>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputText2">Text</label>
+    <input type="text" class="form-control" id="exampleInputText2" placeholder="Input Text">
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputButton">Button</label>
+    <button type="button" class="btn btn-default">Action item</button>
+  </div>
+</form>
+</script>
+
+<script type="text/ng-template" id="stadard-form-controls">
+<div class="form-group">
+  <select class="form-control">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <select multiple class="form-control">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+  </select>
+</div>
+</script>
+
+<script type="text/ng-template" id="validation-states">
+<div class="form-group has-success">
+  <label class="control-label" for="inputSuccess1">Input with success</label>
+  <input type="text" class="form-control" id="inputSuccess1">
+</div>
+<div class="form-group has-success has-feedback">
+  <label class="control-label" for="inputSuccess2">Input with success</label>
+  <input type="text" class="form-control" id="inputSuccess2">
+  <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+</div>
+
+<div class="form-group has-warning">
+  <label class="control-label" for="inputWarning1">Input with warning</label>
+  <input type="text" class="form-control" id="inputWarning1">
+</div>
+<div class="form-group has-warning has-feedback">
+  <label class="control-label" for="inputWarning2">Input with warning</label>
+  <input type="text" class="form-control" id="inputWarning2">
+  <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+</div>
+
+<div class="form-group has-error">
+  <label class="control-label" for="inputError1">Input with error</label>
+  <input type="text" class="form-control" id="inputError1">
+</div>
+<div class="form-group has-error has-feedback">
+  <label class="control-label" for="inputError2">Input with error</label>
+  <input type="text" class="form-control" id="inputError2">
+  <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+</div>
+</script>
