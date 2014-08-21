@@ -84,6 +84,17 @@
       <div class="add-bottom">
         <hljs include="'validation-states'"></hljs>
       </div>
+      <br/>
+      <!-- Validation Feedback -->
+      <h2>Validation Feedback</h2>
+      <p class="add-bottom">For validation feedback please use <a href="http://getbootstrap.com/css/#helper-classes">Bootstrap contextual classes</a> and <a href="http://getbootstrap.com/components/#alerts">alerts</a>.</p>
+      <!-- example and code -->
+      <div class="add-bottom">
+        <ng-include src="'validation-errors'"></ng-include>
+      </div>
+      <div class="add-bottom">
+        <hljs include="'validation-errors'"></hljs>
+      </div>
     </div>
   </div>
 
@@ -257,4 +268,12 @@
   <input type="text" class="form-control" id="inputError2">
   <span class="glyphicon glyphicon-remove form-control-feedback"></span>
 </div>
+</script>
+
+
+<script type="text/ng-template" id="validation-errors">
+<p class="text-success">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+<p class="text-warning">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+<p class="text-danger">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+<div class="alert alert-success" role="alert"><strong>Well done!</strong> You successfully read this important alert message.</div>
 </script>
