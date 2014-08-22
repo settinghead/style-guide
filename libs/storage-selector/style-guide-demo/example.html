@@ -32,6 +32,7 @@ The ID for the currently selected Company can be found in the URL where the ID i
   window.addEventListener("message", handleStorageMessage, false);
 
   function handleStorageMessage(event) {
+    if (event.origin !== "http://storage.risevision.com") { return; }
     console.log(event.data);
   }
 </script>
@@ -57,14 +58,18 @@ The ID for the currently selected Company can be found in the URL where the ID i
   window.addEventListener("message", handleStorageMessage, false);
 
   function handleStorageMessage(event) {
-    if (event.data.indexOf("risemedialibrary") > -1) {
-      document.getElementById("urlMessage").innerHTML = event.data;
+    if (event.origin !== "http://storage.risevision.com") { return; }
+    if (event.data === "close") {
       storageModal.parentNode.removeChild(storageModal);
       backDrop.parentNode.removeChild(backDrop);
+      return;
     }
+    document.getElementById("urlMessage").innerHTML = event.data.join('<br />');
+    storageModal.parentNode.removeChild(storageModal);
+    backDrop.parentNode.removeChild(backDrop);
   }
 </script>
 
 <h3>Click below to see an example</h3>
-<img src="libs/storage-selector/dist/img/widget-icon-storage.png" class="btn btn-default" onclick="loadStorageSelector()" />
+<button class="btn btn-widget-icon-storage" onclick="loadStorageSelector()" type="button" />
 <h6>URL message:</h6><p style="background-color: #dddddd; min-height: 2em" id="urlMessage"></p>
