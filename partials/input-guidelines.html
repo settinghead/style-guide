@@ -8,8 +8,8 @@
     <div class="col-md-12">
       <!-- single column -->
       <h2>Single Column</h2>
-      <p>Forms should generally be used in a single column layout view. Use of <code>col-md-12</code> is highly recommended. If a multi-column layout is <em>absolutely</em> necessary then it should collapse and turn into a single column layout on mobile/tablet.</p>
-      <p class="add-bottom">&raquo; See the <a href="http://getbootstrap.com/css/#grid-example-basic">Bootstrap documentation</a> for more info</p>
+      <p>Forms should generally be used in a single column layout view. We have demonstrated a few different ways to do this below. If a multi-column layout is <em>absolutely</em> necessary then it should collapse and turn into a single column layout on mobile/tablet.</p>
+      <p class="add-bottom">&raquo; See the <a target="_blank" href="http://getbootstrap.com/css/#grid-example-basic">Bootstrap documentation</a> for more info</p>
       <!-- code -->
       <div class="add-bottom">
         <hljs include="'form-column'"></hljs>
@@ -26,17 +26,38 @@
         <hljs include="'label-placeholder'"></hljs>
       </div>
       <br/>
-      <!-- Fixed Widths -->
-      <h2>Fixed Widths/Inline Forms</h2>
-      <p><code>input</code>, <code>select</code>, and <code>textarea</code> are 100% wide by default in Bootstrap. However, in the special case where you have to use an inline form, you'll have to set widths on the form controls used within. Using <code>form-inline</code> is an easy way to achieve this.</p>
+      <!-- Standard Widths -->
+      <h2>Standard Widths</h2>
+      <p>By default <code>input</code>, <code>select</code>, and <code>textarea</code> are 100% width of the parent in Bootstrap. In order to control the sizing of input elements use the following grid classes only: </p>
+      <ul class="add-bottom">
+        <li><code>col-md-6</code>: use for fields such as name, email, address, city, etc.</li>
+        <li><code>col-md-3</code>: use for fields such as state, postal code, etc.</li>
+        <li><code>col-md-1</code>: use for number inputs such as width, font-size, scroll pause, etc.</li>
+        <li><code>col-xs-6</code>: pair with <code>col-md-3</code> or <code>col-md-1</code> only.</li>
+      </ul>
+      <p class="add-bottom">The <code>row</code> &amp; <code>col-</code> grid class wrapper should be around the <code>input</code> element only. This prevents labels from being cut off.</p>
+      <div class="add-bottom">
+        <hljs include="'standard-width-wrapper'"></hljs>
+      </div>
+      <!-- code -->
+      <div class="well add-bottom">
+        <ng-include src="'standard-width-input'"></ng-include>
+      </div>
+      <div class="add-bottom">
+        <hljs include="'standard-width-input'"></hljs>
+      </div>
+      <br/>
+      <!-- Inline Forms -->
+      <h2>Inline Forms</h2>
+      <p>In the special case where you have to use an inline form, you'll have to set widths on the form controls used within. Using <code>form-inline</code> is an easy way to achieve this.</p>
       <p>jQuery/AngularJS plugins are not standard HTML <code>input</code> elements. Therefore, you will have to specify a <code>px</code> / <code>percent</code> width in the CSS. Or use grid classes such as <code>.col-xs-</code>, <code>.col-sm-</code>, <code>.col-md-</code> &amp; <code>.col-lg-</code></p>
       <p class="add-bottom"><strong>Note:</strong> For viewports less than 768px wide <code>form-inline</code> will automatically collapse to a vertically stacked form.</p>
       <!-- code -->
       <div class="well add-bottom">
-        <ng-include src="'fixed-width-input'"></ng-include>
+        <ng-include src="'inline-form'"></ng-include>
       </div>
       <div class="add-bottom">
-        <hljs include="'fixed-width-input'"></hljs>
+        <hljs include="'inline-form'"></hljs>
       </div>
       <br/>
       <!-- Standard elements -->
@@ -105,6 +126,14 @@
   <div class="col-md-12">
     <form></form>
   </div>
+</div>
+
+<div class="container-fluid">
+  <form></form>
+</div>
+
+<div class="container">
+  <form></form>
 </div>
 </script>
 
@@ -179,8 +208,62 @@
 </div>
 </script>
 
+<script type="text/ng-template" id="standard-width-wrapper">
+<div class="form-group">
+  <label>Large</label>
+  <!-- grid sizing wrapper -->
+  <div class="row">
+    <div class="col-md-6">
+      <input type="text" class="form-control" placeholder=".col-md-6">
+    </div>
+  </div>
+  <!-- END grid sizing wrapper -->
+</div>
+</script>
 
-<script type="text/ng-template" id="fixed-width-input">
+<script type="text/ng-template" id="standard-width-input">
+<form role="form">
+  <div class="form-group">
+    <label>Default</label>
+    <input type="text" class="form-control" placeholder="100% width">
+  </div>
+  <div class="form-group">
+    <label>Large</label>
+    <div class="row">
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder=".col-md-6">
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Medium</label>
+    <div class="row">
+      <div class="col-md-3">
+        <input type="text" class="form-control" placeholder=".col-md-3">
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Small</label>
+    <div class="row">
+      <div class="col-md-1">
+        <input type="text" class="form-control" placeholder=".col-md-1">
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Target both Desktop and mobile</label>
+    <div class="row">
+      <div class="col-xs-6 col-md-3">
+        <input type="text" class="form-control" placeholder=".col-xs-6 .col-md-3">
+      </div>
+    </div>
+    <p class="help-block">This input will be medium sized on desktop and small on mobile.</p>
+  </div>
+</form>
+</script>
+
+<script type="text/ng-template" id="inline-form">
 <form class="form-inline" role="form">
   <div class="form-group">
     <label class="sr-only" for="exampleInputFont">Font</label>
