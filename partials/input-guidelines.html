@@ -33,7 +33,7 @@
         <li><code>col-md-6</code>: use for fields such as name, email, address, city, etc.</li>
         <li><code>col-md-3</code>: use for fields such as state, postal code, etc.</li>
         <li><code>col-md-1</code>: use for number inputs such as width, font-size, scroll pause, etc.</li>
-        <li><code>col-xs-6</code>: pair with <code>col-md-3</code> or <code>col-md-1</code> only.</li>
+        <li><code>col-sm-3</code>, <code>col-xs-6</code>: pair with <code>col-md-3</code> or <code>col-md-1</code> only.</li>
       </ul>
       <p class="add-bottom">The <code>row</code> &amp; <code>col-</code> grid class wrapper should be around the <code>input</code> element only. This prevents labels from being cut off.</p>
       <div class="add-bottom">
@@ -254,11 +254,11 @@
   <div class="form-group">
     <label>Target both Desktop and mobile</label>
     <div class="row">
-      <div class="col-xs-6 col-md-3">
-        <input type="text" class="form-control" placeholder=".col-xs-6 .col-md-3">
+      <div class="col-xs-6 col-sm-3 col-md-3">
+        <input type="text" class="form-control" placeholder=".col-xs-6 .col-sm-3 .col-md-3">
       </div>
     </div>
-    <p class="help-block">This input will be medium sized on desktop and small on mobile.</p>
+    <p class="help-block">This input will be medium sized on desktop and small on tablet and mobile.</p>
   </div>
 </form>
 </script>
