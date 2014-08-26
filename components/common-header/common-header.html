@@ -32,7 +32,7 @@
 			<!-- Notifications -->
 			<li class="dropdown" ng-if="companyLoaded">
 				<a href="" class="dropdown-toggle">
-					<i class="glyphicons bell"></i>
+					<i class="fa fa-bell fa-2x"></i>
 					<span class="label label-danger">{{messages.length}}</span>
 				</a>
 				<ul class="dropdown-menu system-messages">
@@ -46,33 +46,33 @@
 			<!-- Shopping Cart -->
 			<li class="shopping-cart" ng-init="updateCartIcon()" ng-show="companyLoaded">
 				<a href="">
-					<i class="glyphicons shopping_cart"></i>
+					<i class="fa fa-shopping-cart fa-2x"></i>
 					<span id="cartBadge" class="label label-primary">7</span>
 				</a>
 			</li>
 			<!-- Current App -->
 			<li class="dropdown">
 				<a href="" class="dropdown-toggle">
-					<i class="glyphicons show_thumbnails"></i>
+					<i class="fa fa-show-thumbnails fa-2x"></i>
 				</a>
 				<ul class="dropdown-menu company-menu">
 					<li class="dropdown-header dropdown-title">
 						Current App
 					</li>
 					<li class="dropdown-header">
-						<i class="glyphicons shop"></i> Store
+						<i class="fa fa-shop fa-2x"></i> Store
 					</li>
 					<li class="divider"></li>
 					<li>
 						<div class="menu-box pull-left">
 							<a href="">
-								<i class="glyphicons picture"></i>
+								<i class="fa fa-picture"></i>
 								<span>Displays</span>
 							</a>
 						</div>
 						<div class="menu-box pull-right">
 							<a href="">
-								<i class="glyphicons picture"></i>
+								<i class="glyphicons fa-picture"></i>
 								<span>Scheduler</span>
 							</a>
 						</div>
@@ -80,13 +80,13 @@
 					<li>
 						<div class="menu-box pull-left">
 							<a href="">
-								<i class="glyphicons picture"></i>
+								<i class="fa fa-picture"></i>
 								<span>Editor</span>
 							</a>
 						</div>
 						<div class="menu-box pull-right">
 							<a href="">
-								<i class="glyphicons picture"></i>
+								<i class="fa fa-picture"></i>
 								<span>Storage</span>
 							</a>
 						</div>
@@ -94,13 +94,13 @@
 					<li>
 						<div class="menu-box pull-left">
 							<a href="">
-								<i class="glyphicons picture"></i>
+								<i class="fa fa-picture"></i>
 								<span>Bulletin</span>
 							</a>
 						</div>
 						<div class="menu-box pull-right">
 							<a href="">
-								<i class="glyphicons picture"></i>
+								<i class="fa fa-picture"></i>
 								<span>Player</span>
 							</a>
 						</div>
@@ -110,7 +110,7 @@
 			<!-- END Current App -->
 			<li class="dropdown" ng-show="companyLoaded">
 				<a href="" class="dropdown-toggle" data-toggle="dropdown">
-					<i class="glyphicons cogwheel"></i>
+					<i class="fa fa-cogwheel fa-2x"></i>
 				</a>
 				<ul class="dropdown-menu">
 					<li class="dropdown-header dropdown-title">
@@ -118,44 +118,44 @@
 					</li>
 					<li class="dropdown-header">
 						<!-- home -->
-						<i ng-if="!subCompanySelected" class="glyphicons home"></i>
+						<i ng-if="!subCompanySelected" class="fa fa-home"></i>
 						<!-- warning -->
-						<i ng-if="subCompanySelected" class="glyphicons warning_sign glyphicon-danger"></i>
+						<i ng-if="subCompanySelected" class="fa fa-warning-sign fa-danger"></i>
 						{{selectedCompanyName}}
 						<div ng-if="subCompanySelected" class="danger">This is a Sub-Company of your Company.</div>
 					</li>
 					<li ng-if="subCompanySelected" class="divider"></li>
 					<li ng-if="subCompanySelected">
 						<a href="" ng-click="resetCompany()">
-							<i class="glyphicons home"></i>
+							<i class="fa fa-home"></i>
 							<span class="item-name">Switch To My Company</span>
 						</a>
 					</li>
 					<li class="divider"></li>
 					<li>
 						<a href="" ng-click="companySelector()">
-							<i class="glyphicons new_window"></i>
+							<i class="fa fa-new-window"></i>
 							<span class="item-name">Select Sub-Company</span>
 						</a>
 					</li>
 					<li ng-if="isAdmin" class="divider"></li>
 					<li ng-if="isAdmin">
 						<a href="" data-toggle="modal" data-target="#sub-company-modal" ng-click="addSubCompany()">
-							<i class="glyphicons plus"></i>
+							<i class="fa fa-plus"></i>
 							<span class="item-name">Add Sub-Company</span>
 						</a>
 					</li>
 					<li ng-if="isAdmin" class="divider"></li>
 					<li ng-if="isAdmin">
 						<a href="" ng-click="companySettings()">
-							<i class="glyphicons cogwheels"></i>
+							<i class="fa fa-cogwheels"></i>
 							<span class="item-name">Company Settings</span>
 						</a>
 					</li>
 					<li ng-if="isAdmin" class="divider"></li>
 					<li ng-if="isAdmin">
 						<a href="" ng-click="companyUsers()">
-							<i class="glyphicons group"></i>
+							<i class="fa fa-group"></i>
 							<span class="item-name">Company Users</span>
 						</a>
 					</li>
@@ -175,21 +175,21 @@
 					<li class="divider"></li>
 					<li>
 						<a href="" ng-click="userSettings()">
-							<i class="glyphicons cogwheels"></i>
+							<i class="fa fa-cogwheels"></i>
 							<span class="item-name">User Settings</span>
 						</a>
 					</li>
 					<li class="divider"></li>
 					<li>
 						<a href="" ng-click="paymentMethods()">
-							<i class="glyphicons usd"></i>
+							<i class="fa fa-usd"></i>
 							<span class="item-name">Payment Methods</span>
 						</a>
 					</li>
 					<li class="divider"></li>
 					<li>
 						<a href="" ng-click="logout()">
-							<i class="glyphicons log_out"></i>
+							<i class="fa fa-log-out"></i>
 							<span class="item-name">Sign Out</span>
 						</a>
 					</li>
