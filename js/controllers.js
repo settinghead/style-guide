@@ -150,6 +150,10 @@ angular.module('styleGuideApp.controllers')
         'widget-icons': {
           title: 'Widget Icons',
           template: 'components/bootstrap-based/widget-icons.html'
+        },
+        'units': {
+          title: 'Units',
+          template: 'components/bootstrap-based/units.html'
         }
       };
 
