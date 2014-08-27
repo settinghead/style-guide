@@ -23,7 +23,7 @@
     "trade-time": "Trade Time"
   },
   "spreadsheet": {
-    "heading": "Spreadsheet",
+    "header": "Spreadsheet",
     "select": "Select Spreadsheet",
     "cells": {
       "label": "Include",
