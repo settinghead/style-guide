@@ -111,8 +111,9 @@
                     "</div>",
                     "<div class='sp-initial sp-thumb sp-cf'></div>",
                     "<div class='sp-button-container sp-cf'>",
-                        "<button type='button' class='sp-choose'></button>",
-                        "<button type='button' class='sp-cancel'></button>",
+                        "<button type='button' class='sp-choose'><i class='glyphicons white ok_2'></i></button>",
+                        "<span class='sp-btn-spacer'/>",
+                        "<button type='button' class='sp-cancel'><i class='glyphicons white remove_2'></i></button>",
                     "</div>",
                 "</div>",
             "</div>"
@@ -350,7 +351,7 @@
             });
             textInput.keydown(function (e) { if (e.keyCode == 13) { setFromTextInput(); } });
 
-            cancelButton.text(opts.cancelText);
+            cancelButton[0].innerHTML=opts.cancelText+' '+cancelButton[0].innerHTML;
             cancelButton.bind("click.spectrum", function (e) {
                 e.stopPropagation();
                 e.preventDefault();
@@ -370,7 +371,9 @@
                 }
             });
 
-            chooseButton.text(opts.chooseText);
+            //chooseButton.text(opts.chooseText);
+
+            chooseButton[0].innerHTML=opts.chooseText+' '+chooseButton[0].innerHTML;
             chooseButton.bind("click.spectrum", function (e) {
                 e.stopPropagation();
                 e.preventDefault();
