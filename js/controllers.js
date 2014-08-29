@@ -151,7 +151,7 @@ angular.module('styleGuideApp.controllers')
           title: 'Units',
           template: 'components/bootstrap-based/units.html'
         },
-        'storage-loader':{
+        'storage-selector':{
           title:'Storage Selector',
           template:'libs/component-storage-loader/demo/demo.html'
         }
