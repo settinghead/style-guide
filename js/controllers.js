@@ -135,10 +135,6 @@ angular.module('styleGuideApp.controllers')
           title: 'Font Picker',
           template: 'libs/bootstrap-form-components/demos/font-picker-demo.html'
         },
-        'storage-selector': {
-          title: 'Storage Selector',
-          template: 'libs/storage-selector/style-guide-demo/example.html'
-        },
         'background-setting': {
           title: 'Background Setting',
           template: 'libs/widget-settings-ui-components/demos/background-demo.html'
@@ -154,6 +150,10 @@ angular.module('styleGuideApp.controllers')
         'units': {
           title: 'Units',
           template: 'components/bootstrap-based/units.html'
+        },
+        'storage-loader':{
+          title:'Storage Selector',
+          template:'libs/component-storage-loader/demo/demo.html'
         }
       };
 
