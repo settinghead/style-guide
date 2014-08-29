@@ -21,6 +21,7 @@ angular.module('styleGuideApp', [
   'risevision.widget.common.column-selector',
   'risevision.widget.common.table-setting',
   'risevision.widget.common.google-spreadsheet-controls',
+  'risevision.widget.common.storage-client-loader',
   'risevision.widget.common.url-field',
   'risevision.widget.common.google-drive-picker',
   'risevision.widget.common.background-setting',
@@ -65,6 +66,13 @@ angular.module('styleGuideApp', [
         });
     }
   ])
+  .config(function($sceDelegateProvider) {
+    $sceDelegateProvider.resourceUrlWhitelist([
+       // Allow same origin resource loads.
+       'self',
+       'http://*.risevision.com/**'
+     ])
+   })
   .config(["$translateProvider", function ($translateProvider) {
     $translateProvider.useStaticFilesLoader({
       prefix: "locales/",
