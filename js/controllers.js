@@ -231,7 +231,6 @@ angular.module('styleGuideApp.controllers')
 
       $scope.alignText = 'right';
       $scope.spreadsheet = {};
-      $scope.url = "";
 
       $scope.defaultSpinnerOptions = {
         lines: 12, // The number of lines to draw
