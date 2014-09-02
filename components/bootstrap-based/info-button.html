@@ -1,0 +1,31 @@
+<script type="text/ng-template" id="ui-popover">
+<span popover="Appeared on Click! Click again to hide"  popover-trigger="click" class=" fa fa-info-circle fa-2x" popover-placement="right" >
+</script>
+
+<h2 class="add-bottom">Info Button</h2>
+
+<p>This is intended to be used in page/section headers to show info about a section or a group. For Risevision, the trigger should be set to 'click' so that it will work on mobile devices.
+
+This uses the UI Popover and the library can be used to build more complex examples, see <a href="http://angular-ui.github.io/bootstrap/">UI Popover</a> for more info.</p>
+
+<p class="add-bottom"><strong>Dependencies</strong> <span class="label label-info">RV-Common-Style</span> <span class="label label-info">AngularJS</span> <span class="label label-info">UI Bootstrap</span></p>
+
+<h3>Module Includes</h3>
+<p>Declare a dependency on the ui. in your module:</p>
+<code>angular.module('myApp', ['ui.bootstrap']);</code>
+
+
+<h3>Script Includes</h3>
+<p>Make sure you include the following files in <code>index.html</code></p>
+<hljs>
+bower_components/angular/angular.js
+bower_components/rv-common-style/rise.min.css
+bower_components/angular-bootstrap/ui-bootstrap-tpls.js
+</hljs>
+<h3>Usage</h3>
+<hljs include="'ui-popover'"></hljs>
+
+<h3>Example</h3>
+<div class="add-bottom">
+  <ng-include src="'ui-popover'"></ng-include>
+</div>

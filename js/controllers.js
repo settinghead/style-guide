@@ -158,7 +158,11 @@ angular.module('styleGuideApp.controllers')
         'github-src-button':{
           title:'Github Source Button',
           template:'components/bootstrap-based/github-src-button.html'
-        }
+        },
+        'info-button':{
+          title:'Info Button',
+          template:'components/bootstrap-based/info-button.html'
+        },
       };
 
       $scope.things = ['Spectacles', 'Giraffe', 'Turtle', 'Shark', 'Lamp', 'Chocolate', 'Beef', 'Drawer', 'Brocolli', 'Tomato', 'Plate', 'Zebra'];
