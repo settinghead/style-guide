@@ -262,5 +262,7 @@ angular.module('styleGuideApp.controllers')
       $scope.update = function () {
         $scope.$broadcast('collectAdditionalParams');
       };
+
+      $scope.storageClientSource = 'angular';//example code to show on storage selector page
     }
   ]);
