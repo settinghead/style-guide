@@ -154,6 +154,10 @@ angular.module('styleGuideApp.controllers')
         'storage-selector':{
           title:'Storage Selector',
           template:'libs/component-storage-loader/demo/demo.html'
+        },
+        'github-src-button':{
+          title:'Github Source Button',
+          template:'components/bootstrap-based/github-src-button.html'
         }
       };
 
