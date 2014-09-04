@@ -24,7 +24,8 @@
     "bootstrap-form-components": "git://github.com/Rise-Vision/bootstrap-form-components",
     "widget-settings-ui-core": "git://github.com/Rise-Vision/widget-settings-ui-core",
     "angular-bootstrap": "~0.11.0",
-    "component-storage-loader": "git@github.com:Rise-Vision/component-storage-loader.git"
+    "component-storage-loader": "git@github.com:Rise-Vision/component-storage-loader.git",
+    "component-subscription-status": "git@github.com:Rise-Vision/component-subscription-status.git"
   },
   "overrides": {
     "component-storage-loader": {
@@ -147,6 +148,13 @@
     "widget-settings-ui-core": {
       "main": [
         "dist/widget-settings-ui-core.js"
+      ]
+    },
+    "component-subscription-status": {
+      "main": [
+        "demos/subscription-status-demo.html",
+        "dist/js/subscription-status.js",
+        "dist/css/subscription-status.css"
       ]
     }
   }

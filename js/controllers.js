@@ -155,6 +155,10 @@ angular.module('styleGuideApp.controllers')
           title:'Storage Selector',
           template:'libs/component-storage-loader/demo/demo.html'
         },
+        'subscription-status':{
+          title:'Subscription Status',
+          template:'libs/component-subscription-status/demos/subscription-status-demo.html'
+        },
         'github-src-button':{
           title:'Github Source Button',
           template:'components/bootstrap-based/github-src-button.html'

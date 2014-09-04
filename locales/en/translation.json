@@ -64,6 +64,9 @@
       "seconds": "sec"
     }
   },
+  "subscription-status": {
+    "heading": "Product Status"
+  },
   "scroll": {
     "heading": "Scroll",
     "by": {

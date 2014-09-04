@@ -28,7 +28,8 @@ angular.module('styleGuideApp', [
   'risevision.common.loading',
   'risevision.widget.common.fontpicker',
   'risevision.widget.common.fontsizepicker',
-  'risevision.widget.common.translate'
+  'risevision.widget.common.translate',
+  'risevision.widget.common.subscription-status'
 ])
   .config(function(hljsServiceProvider) {
     hljsServiceProvider.setOptions({
