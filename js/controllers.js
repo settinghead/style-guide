@@ -174,41 +174,48 @@ angular.module('styleGuideApp.controllers')
       $scope.color = "transparent";
       $scope.columnNames = [
         {
-          name: "instrument",
+          id: "instrument",
+          name: "columns.instrument",
           type: "text"
         },
         {
-          name: "instrument-logo",
+          id: "instrument-logo",
+          name: "columns.instrument-logo",
           type: "text"
         },
         {
-          name: "last-price",
+          id: "last-price",
+          name: "columns.last-price",
           type: "int"
         },
         {
-          name: "change",
+          id: "change",
+          name: "columns.change",
           type: "int"
         },
         {
-          name: "percent-change",
+          id: "percent-change",
+          name: "columns.percent-change",
           type: "int"
         },
         {
-          name: "day-high",
+          id: "day-high",
+          name: "columns.day-high",
           type: "int"
         },
         {
-          name: "day-low",
+          id: "day-low",
+          name: "columns.day-low",
           type: "int"
         }
       ];
       $scope.columns = [
         {
-          name: "instrument",
+          id: "instrument",
           alignment: "right"
         },
         {
-          name: "instrument-logo"
+          id: "instrument-logo"
         }
       ];
       $scope.scroll = {};
