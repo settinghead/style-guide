@@ -22,6 +22,9 @@
     "yield-change": "Yield Change",
     "trade-time": "Trade Time"
   },
+  "subscription-status": {
+    "heading": "Product Status"
+  },
   "spreadsheet": {
     "heading": "Spreadsheet",
     "select": "Select Spreadsheet",
@@ -64,9 +67,6 @@
       "pixels": "px",
       "seconds": "sec"
     }
-  },
-  "subscription-status": {
-    "heading": "Product Status"
   },
   "scroll": {
     "heading": "Scroll",
@@ -127,6 +127,12 @@
       "up-red": "Change down green change up red",
       "positive-green": "Positive value green negative red",
       "positive-red": "Positive value red negative green"
+    },
+    "date": {
+      "label": "Date Format",
+      "short": "Short",
+      "medium": "Medium",
+      "long": "Long"
     },
     "header-text": {
       "label": "Header Text"
