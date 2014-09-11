@@ -190,8 +190,10 @@
         }
         else if (opts.type === "background") {
           replaceInput = [
-            "<div class='sp-replacer'>",
-                "<div class='sp-preview'><div class='sp-preview-inner'></div></div>",
+            "<div class='sp-replacer background-color-picker'>",
+                "<div class='sp-preview'>",
+                  "<div class='sp-preview-inner'></div>",
+                  "</div>",
                 "<b class='caret'></b>",
             "</div>"
           ].join('');
