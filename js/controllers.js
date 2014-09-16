@@ -151,22 +151,26 @@ angular.module('styleGuideApp.controllers')
           title: 'Units',
           template: 'components/bootstrap-based/units.html'
         },
-        'storage-selector':{
+        'storage-selector': {
           title:'Storage Selector',
           template:'libs/component-storage-loader/demo/demo.html'
         },
-        'subscription-status':{
+        'subscription-status': {
           title:'Subscription Status',
           template:'libs/component-subscription-status/demos/subscription-status-demo.html'
         },
-        'github-src-button':{
+        'github-src-button': {
           title:'Github Source Button',
           template:'components/bootstrap-based/github-src-button.html'
         },
-        'info-button':{
-          title:'Info Button',
+        'info-button': {
+          title: 'Info Button',
           template:'components/bootstrap-based/info-button.html'
         },
+        'search-bar': {
+          title: 'Search Bar',
+          template:'components/bootstrap-based/search-bar.html'
+        }
       };
 
       $scope.things = ['Spectacles', 'Giraffe', 'Turtle', 'Shark', 'Lamp', 'Chocolate', 'Beef', 'Drawer', 'Brocolli', 'Tomato', 'Plate', 'Zebra'];
