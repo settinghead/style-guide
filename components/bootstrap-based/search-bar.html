@@ -1,0 +1,20 @@
+<script type="text/ng-template" id="search-bar">
+<div class="form-group">
+  <!-- Label -->
+  <label for="company-search">Select A Company</label>
+
+  <!-- Input group with search icon -->
+  <div class="input-group">
+    <input type="text" class="form-control" id="company-search">
+    <!-- Attach ng-click here if needed -->
+    <span class="input-group-addon primary-bg">
+      <i class="fa fa-search"></i>
+    </span>
+  </div>
+</div>
+</script>
+
+
+<h1 class="add-bottom">Search Bar</h1>
+<ng-include src="'search-bar'"></ng-include>
+<hljs include="'search-bar'"></hljs>
