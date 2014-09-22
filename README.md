@@ -38,15 +38,6 @@ Reference documentation for all Rise Vision common-style. It is published as git
 - gulp-clean
 - gulp-util
  
-
-## Documentation
-If you have any questions or problems please don't hesitate to join our lively and responsive community at http://community.risevision.com.
-
-If you are looking for user documentation on Rise Vision please see http://www.risevision.com/help/users/
-
-If you would like more information on developing applications for Rise Vision please visit http://www.risevision.com/help/developers/.
-
-
 ## Submitting Issues
 If you encounter problems or find defects we really want to hear about them. If you could take the time to add them as issues to this Repository it would be most appreciated. When reporting issues please use the following format where applicable:
 
