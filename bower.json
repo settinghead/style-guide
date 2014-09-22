@@ -157,5 +157,9 @@
         "dist/css/subscription-status.css"
       ]
     }
+  },
+  "resolutions": {
+    "angular-mocks": "~1.2.24",
+    "angular": "1.2.25"
   }
 }
