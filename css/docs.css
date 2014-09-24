@@ -12,7 +12,6 @@ pre,
 	border-radius: 2px;
 	min-height: auto;
 	max-height: 340px;
-	overflow-y: auto;
 }
 
 .fixed > pre {
