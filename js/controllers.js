@@ -167,6 +167,10 @@ angular.module('styleGuideApp.controllers')
           title: 'Info Button',
           template:'components/bootstrap-based/info-button.html'
         },
+        'modal': {
+            title: 'Modal',
+            template: 'components/bootstrap-based/modal.html'
+        },
         'search-bar': {
           title: 'Search Bar',
           template:'components/bootstrap-based/search-bar.html'
