@@ -7,13 +7,13 @@
 
 <h3>Usage</h3>
 <p>When a file is selected, the storage selector will send a message to its parent window.
-   The message will contain the url of the selected file.</p>
+    The message will contain the url of the selected file.</p>
 
 <p>The current window will load the iframe and is responsible for providing the Company ID
-as well as any desired styling on the iframe. </p>
+    as well as any desired styling on the iframe. </p>
 
 <p>To retrieve the Company ID click on Settings from the menu of the Rise Vision Application.
-The ID for the currently selected Company can be found in the URL where the ID is everything to the right of "company=", for example:</p>
+    The ID for the currently selected Company can be found in the URL where the ID is everything to the right of "company=", for example:</p>
 <hljs>http://rva.risevision.com/#COMPANY_MANAGE/company=XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX</hljs>
 
 <h3>Module Includes</h3>
@@ -23,35 +23,42 @@ The ID for the currently selected Company can be found in the URL where the ID i
 <h3>Script Includes</h3>
 <p>Make sure you include the following files in <code>index.html</code></p>
 <hljs>
-bower_components/angular/angular.js
-bower_components/component-storage-loader/dist/component-storage-loader.js
+    bower_components/angular/angular.js
+    bower_components/component-storage-loader/dist/component-storage-loader.js
 </hljs>
 
 <h3>Usage</h3>
 <div class="btn-group" data-toggle="buttons">
-  <form>
-    <input type="radio"  ng-model="storageClientSource" value="angular"> AngularJs
-    <input type="radio"  ng-model="storageClientSource" value="js"> Javascript
-  </form>
+    <form>
+        <input type="radio"  ng-model="storageClientSource" value="angular"> AngularJs
+        <input type="radio"  ng-model="storageClientSource" value="angularCustom"> AngularJs Custom
+        <input type="radio"  ng-model="storageClientSource" value="js"> Javascript
+    </form>
 </div>
 <div ng-show="storageClientSource === 'angular'">
-  <hljs include="'sample-angular'"></hljs>
+    <hljs include="'sample-angular'"></hljs>
+</div>
+<div ng-show="storageClientSource === 'angularCustom'">
+    <hljs include="'sample-angular-custom'"></hljs>
 </div>
 <div ng-show="storageClientSource === 'js'">
-  <hljs include="'sample-js'"></hljs>
+    <hljs include="'sample-js'"></hljs>
 </div>
-  </div>
+</div>
 </div>
 
 <div class="add-bottom">
-  <ng-include src="'sample-angular'"></ng-include>
+    <ng-include src="'sample-angular'"></ng-include>
 </div>
 
 <script type="text/ng-template" id="sample-angular">
-<storage-client-loader companyid="YOUR_COMPANY_ID"></storage-client-loader>
+    <storage-client-loader companyid="YOUR_COMPANY_ID"></storage-client-loader>
+</script>
+<script type="text/ng-template" id="sample-angular-custom">
+    <storage-client-loader companyid="YOUR_COMPANY_ID" instance_template="storage.html" use_ctrl="StorageCtrl"></storage-client-loader>
 </script>
 <script type="text/ng-template" id="sample-js">
-  function loadStorageSelector() {
+    function loadStorageSelector() {
     backDrop = document.createElement("div");
     backDrop.className = "storage-selector-backdrop";
     document.body.appendChild(backDrop);
@@ -59,14 +66,13 @@ bower_components/component-storage-loader/dist/component-storage-loader.js
     storageModal.src = "http://storage.risevision.com/storage-modal.html#/files/YOUR_COMPANY_ID";
     storageModal.className = "storage-selector-iframe";
     storageModal = document.body.appendChild(storageModal);
-  }
+    }
 
-  window.addEventListener("load", loadStorageSelector);
-  window.addEventListener("message", handleStorageMessage, false);
+    window.addEventListener("load", loadStorageSelector);
+    window.addEventListener("message", handleStorageMessage, false);
 
-  function handleStorageMessage(event) {
+    function handleStorageMessage(event) {
     if (event.origin !== "http://storage.risevision.com") { return; }
     console.log(event.data);
-  }
+    }
 </script>
-
