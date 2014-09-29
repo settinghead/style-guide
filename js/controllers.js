@@ -174,6 +174,10 @@ angular.module('styleGuideApp.controllers')
         'search-bar': {
           title: 'Search Bar',
           template:'components/bootstrap-based/search-bar.html'
+        },
+        'widget-button-toolbar': {
+          title: 'Widget Button Toolbar',
+          template:'libs/widget-settings-ui-components/demos/widget-button-toolbar-demo.html'
         }
       };
 
