@@ -45,10 +45,6 @@ angular.module('styleGuideApp', [
           controller: 'ReadeMeCtrl',
           templateUrl: 'partials/read-me.html'
         })
-        .when('/commonheader', {
-          controller: 'CommonHeaderCtrl',
-          templateUrl: 'partials/common-header.html'
-        })
         .when('/input', {
           templateUrl: 'partials/input-guidelines.html'
         })
