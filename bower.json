@@ -161,6 +161,10 @@
     }
   },
   "resolutions": {
-    "angular-mocks": "~1.2.24"
+    "angular-mocks": "~1.2.24",
+    "angular-route": "1.2.22",
+    "angular": "1.2.18",
+    "jquery": "1.11.0",
+    "jQuery": "1.11.0"
   }
 }

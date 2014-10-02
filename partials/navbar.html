@@ -2,15 +2,28 @@
 <div class="navbar navbar-default navbar-static-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
+<!--       <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><img src="http://c558385.r85.cf2.rackcdn.com/rise-logo.png"></a>
+      </button> -->
+
+      <a class="navbar-brand hidden-md hidden-lg text-center"
+        href=""
+        ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
+        <i class="fa fa-bars"></i>
+      </a>
+
+      <a class="navbar-brand"
+        href="http://www.risevision.com/" target="_blank">
+        <img src="//s3.amazonaws.com/rise-common/images/logo-small.png" class="img-responsive logo-small" width="113" height="42" alt="Rise Vision">
+      </a>
+
+      <!-- <a class="navbar-brand" href="#"><img src="http://c558385.r85.cf2.rackcdn.com/rise-logo.png"></a> -->
     </div>
-    <div class="navbar-collapse collapse" collapse="navCollapsed">
+    <!-- <div class="navbar-collapse collapse" > -->
+    <div class="navbar-collapse navbar-left" collapse="navCollapsed">
       <ul class="nav navbar-nav">
         <li><a href="#/components">Components</a></li>
         <li><a href="#/commonheader">Common Header</a></li>
