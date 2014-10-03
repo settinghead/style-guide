@@ -119,7 +119,8 @@
     },
     "sign": {
       "label": "Sign",
-      "arrow": "Arrow"
+      "arrow": "Arrow",
+      "none": "None"
     },
     "color-condition": {
       "label": "Color Condition",
