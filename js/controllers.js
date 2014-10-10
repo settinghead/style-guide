@@ -6,8 +6,8 @@ angular.module('styleGuideApp.controllers')
 
     }
   ])
-  .controller('ComponentsCtrl', ['$scope', '$routeParams', '$timeout',
-    function($scope, $routeParams, $timeout) {
+  .controller('ComponentsCtrl', ['$scope', '$routeParams', '$loading',
+    function($scope, $routeParams, $loading) {
 
       $scope.activeComponent = $routeParams.id ? $routeParams.id : 'action-bar';
 
@@ -236,38 +236,32 @@ angular.module('styleGuideApp.controllers')
       $scope.alignText = 'right';
       $scope.spreadsheet = {};
 
-      // $scope.defaultSpinnerOptions = {
-      //   lines: 12, // The number of lines to draw
-      //   length: 20, // The length of each line
-      //   width: 10, // The line thickness
-      //   radius: 30, // The radius of the inner circle
-      //   corners: 1, // Corner roundness (0..1)
-      //   rotate: 0, // The rotation offset
-      //   direction: 1, // 1: clockwise, -1: counterclockwise
-      //   color: "#555", // #rgb or #rrggbb or array of colors
-      //   speed: 1, // Rounds per second
-      //   trail: 60, // Afterglow percentage
-      //   shadow: false, // Whether to render a shadow
-      //   hwaccel: false, // Whether to use hardware acceleration
-      //   className: "spinner", // The CSS class to assign to the spinner
-      //   zIndex: 2e9, // The z-index (defaults to 2000000000)
-      //   top: "50%", // Top position relative to parent in px
-      //   left: "50%" // Left position relative to parent in px
-      // };
+      $scope.defaultSpinnerOptions = {
+        lines: 12, // The number of lines to draw
+        length: 20, // The length of each line
+        width: 10, // The line thickness
+        radius: 30, // The radius of the inner circle
+        corners: 1, // Corner roundness (0..1)
+        rotate: 0, // The rotation offset
+        direction: 1, // 1: clockwise, -1: counterclockwise
+        color: "#555", // #rgb or #rrggbb or array of colors
+        speed: 1, // Rounds per second
+        trail: 60, // Afterglow percentage
+        shadow: false, // Whether to render a shadow
+        hwaccel: false, // Whether to use hardware acceleration
+        className: "spinner", // The CSS class to assign to the spinner
+        zIndex: 2e9, // The z-index (defaults to 2000000000)
+        top: "50%", // Top position relative to parent in px
+        left: "50%" // Left position relative to parent in px
+      };
 
-      // $scope.startSpinner = function () {
-      //   $loading.start(["rv-loading-spinner-demo"]);
-      // };
+      $scope.startSpinner = function () {
+        $loading.start(["rv-loading-spinner-demo"]);
+      };
 
-      // $scope.stopSpinner = function () {
-      //   $loading.stop(["rv-loading-spinner-demo"]);
-      // };
-
-      // // Global Spinner
-      // $loading.startGlobal("some-job-key");
-      // $timeout(function() {
-      //   $loading.stopGlobal("some-job-key");
-      // }, 1000);
+      $scope.stopSpinner = function () {
+        $loading.stop(["rv-loading-spinner-demo"]);
+      };
 
       $scope.update = function () {
         $scope.$broadcast('collectAdditionalParams');
