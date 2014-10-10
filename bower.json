@@ -155,6 +155,7 @@
     "component-subscription-status": {
       "main": [
         "demos/subscription-status-demo.html",
+        "demos/app-subscription-status-demo.html",
         "dist/js/subscription-status.js",
         "dist/css/subscription-status.css"
       ]
