@@ -501,8 +501,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
     border-color: #2d60ad;
 }
 .sp-container button.sp-choose {
-    margin-right: 3px;
-
+    margin-right: 2px;
     color: #fff;
     background-color: #45b864;
     border-color: #45b864;
