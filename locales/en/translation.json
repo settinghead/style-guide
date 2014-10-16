@@ -22,9 +22,6 @@
     "yield-change": "Yield Change",
     "trade-time": "Trade Time"
   },
-  "subscription-status": {
-    "heading": "Product Status"
-  },
   "spreadsheet": {
     "heading": "Spreadsheet",
     "select": "Select Spreadsheet",
@@ -69,6 +66,9 @@
       "seconds": "sec",
       "minutes": "min"
     }
+  },
+  "subscription-status": {
+    "heading": "Product Status"
   },
   "scroll": {
     "heading": "Scroll",
