@@ -155,6 +155,10 @@ angular.module('styleGuideApp.controllers')
         'widget-button-toolbar': {
           title: 'Widget Button Toolbar',
           template:'libs/widget-settings-ui-components/demos/widget-button-toolbar-demo.html'
+        },
+        'file-picker': {
+          title: 'File Picker',
+          template: 'components/bootstrap-based/file-picker.html'
         }
       };
 

@@ -1,0 +1,17 @@
+<script type="text/ng-template" id="file-picker">
+<label class="file-picker">
+  <!-- Label -->
+  <span class="hidden-xs">Attach an image or file</span>
+  <!-- Camera icon -->
+  <i class="fa fa-camera file-picker-icon"></i>
+  <!-- Hidden input -->
+  <input type="file" accept="image/*;capture=camera">
+</label>
+</script>
+
+
+<h1 class="add-bottom">File Picker</h1>
+<div class="add-bottom">
+  <ng-include src="'file-picker'"></ng-include>
+</div>
+<hljs include="'file-picker'"></hljs>
