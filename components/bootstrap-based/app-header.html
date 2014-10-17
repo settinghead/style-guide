@@ -1,0 +1,47 @@
+<script type="text/ng-template" id="app-header-small">
+<div class="app-header">
+  <h2>App Name
+    <!-- Share Button -->
+    <a type="button"
+    class="btn btn-github"
+    href="https://github.com/Rise-Vision/alerts-app"
+    target="_blank">
+      Contribute <i class="fa fa-github fa-lg"></i>
+    </a>
+  </h2>
+</div>
+</script>
+
+<script type="text/ng-template" id="app-header">
+<div class="app-header">
+  <h2>App Name
+    <!-- Share Button -->
+    <a type="button"
+    class="btn btn-github"
+    href="https://github.com/Rise-Vision/repo-name"
+    target="_blank">
+      Contribute <i class="fa fa-github fa-lg"></i>
+    </a>
+  </h2>
+  <!-- Actions -->
+  <div class="actions">
+    <!-- Secondary -->
+    <a href="" class="btn btn-fixed-width btn-default">
+      Secondary Action <i class="fa fa-plus icon-right"></i>
+    </a>
+    <!-- Primary -->
+    <a href="" class="btn btn-fixed-width btn-danger">
+      Primary Action
+    </a>
+  </div>
+</div>
+</script>
+
+
+<h1 class="add-bottom">App Header</h1>
+<ng-include src="'app-header'"></ng-include>
+<hljs include="'app-header'"></hljs>
+<br /><br /><br />
+<h3>Header Only</h3>
+<ng-include src="'app-header-small'"></ng-include>
+<hljs include="'app-header-small'"></hljs>

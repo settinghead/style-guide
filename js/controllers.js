@@ -24,6 +24,10 @@ angular.module('styleGuideApp.controllers')
           title: 'Action-bar',
           template: 'components/bootstrap-based/action-bar.html'
         },
+        'app-header': {
+          title: 'App Header',
+          template: 'components/bootstrap-based/app-header.html'
+        },
         'typeahead-multiselect': {
           title: 'Typeahead Multiselect',
           template: 'components/bootstrap-based/ui-select2.html'

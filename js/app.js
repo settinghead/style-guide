@@ -10,7 +10,6 @@ angular.module('styleGuideApp', [
   'ui.select2',
   'styleGuideApp.controllers',
   'styleGuideApp.directives',
-  'commonHeader',
   'risevision.widget.common',
   'risevision.widget.common.alignment',
   'risevision.widget.common.color-picker',
