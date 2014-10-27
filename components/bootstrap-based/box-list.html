@@ -1,0 +1,24 @@
+<script type="text/ng-template" id="box-list">
+<div class="box-list-container">
+  <!-- Box List -->
+  <div class="box-list" ng-repeat="n in [0,1,2,3,4,5,6,7,8,9]">
+    <!-- Aside -->
+    <div class="box-list-aside">
+      <button class="btn btn-default btn-xs">Action</button>
+    </div>
+    <!-- Body -->
+    <div class="box-list-body">
+      <!-- Title (Use h5) -->
+      <h5 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+      <!-- Secondary -->
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <!-- Meta -->
+      <p class="meta">{{1288323623006 | date:'mediumDate'}} {{alert.sent | date:'shortTime'}} by Cory Aguilar</small>
+    </div>
+  </div>
+</div>
+</script>
+
+<h1 class="add-bottom">Box List</h1>
+<ng-include src="'box-list'"></ng-include>
+<hljs include="'box-list'"></hljs>

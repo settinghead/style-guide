@@ -163,6 +163,10 @@ angular.module('styleGuideApp.controllers')
         'empty-state': {
           title: 'Empty State',
           template: 'components/bootstrap-based/empty-state.html'
+        },
+        'box-list': {
+          title: 'Box List',
+          template: 'components/bootstrap-based/box-list.html'
         }
       };
 
