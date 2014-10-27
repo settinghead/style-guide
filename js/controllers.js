@@ -159,6 +159,10 @@ angular.module('styleGuideApp.controllers')
         'file-picker': {
           title: 'File Picker',
           template: 'components/bootstrap-based/file-picker.html'
+        },
+        'empty-state': {
+          title: 'Empty State',
+          template: 'components/bootstrap-based/empty-state.html'
         }
       };
 
