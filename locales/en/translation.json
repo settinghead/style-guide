@@ -79,7 +79,7 @@
       "page": "By Page"
     },
     "speed": {
-      "label": "Scroll Speed",
+      "label": "Speed",
       "slowest": "Slowest",
       "slow": "Slow",
       "medium": "Medium",
@@ -87,7 +87,7 @@
       "fastest": "Fastest"
     },
     "pause": {
-      "label": "Scroll Pause",
+      "label": "Pause",
       "tooltip": "Number of seconds to pause after touch or the end of the list is reached"
     }
   },
@@ -108,7 +108,7 @@
   },
   "column": {
     "heading": "Columns",
-    "select-title": "Select A Column To Add",
+    "select-title": "Select Columns To Format",
     "alignment": {
       "label": "Alignment",
       "left": "Left",
