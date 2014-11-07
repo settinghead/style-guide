@@ -167,6 +167,10 @@ angular.module('styleGuideApp.controllers')
         'box-list': {
           title: 'Box List',
           template: 'components/bootstrap-based/box-list.html'
+        },
+        'responsive-toolbar': {
+          title: 'Responsive Toolbar',
+          template: 'components/bootstrap-based/responsive-toolbar.html'
         }
       };
 
