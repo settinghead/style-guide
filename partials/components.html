@@ -2,7 +2,7 @@
 	<div class="row">
 
 		<!-- Sidebar -->
-		<div class="col-sm-3 blog-sidebar">
+		<div class="col-md-3 blog-sidebar hidden-xs hidden-sm">
       <ul class="nav nav-pills nav-stacked">
         <li ng-repeat="(id, component) in uiComponents | orderBy:'title'"
         		ng-class="{active: activeComponent==id}">
@@ -12,8 +12,20 @@
 	  </div>
 	  <!-- END Sidebar -->
 
+    <!-- Mobile Sidebar -->
+    <div class="col-sm-12 visible-xs visible-sm add-top">
+      <div class="form-group">
+        <select
+          ng-model="activeComponent"
+          ng-change="goTo()"
+          class="form-control"
+          ng-options="id as component.title for (id, component) in uiComponents | orderBy:'title' "></select>
+      </div>
+    </div>
+    <!-- End Mobile Sidebar -->
+
 	  <!-- Component Main -->
-		<div class="col-sm-9 blog-main">
+		<div class="col-md-9 blog-main">
 			<ng-include src="uiComponents[activeComponent].template"></ng-include>
 		</div>
 		<!-- END Component Main -->

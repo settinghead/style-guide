@@ -6,12 +6,15 @@ angular.module('styleGuideApp.controllers')
 
     }
   ])
-  .controller('ComponentsCtrl', ['$scope', '$routeParams', '$loading',
-    function($scope, $routeParams, $loading) {
+  .controller('ComponentsCtrl', ['$scope', '$routeParams', '$loading', '$location', function($scope, $routeParams, $loading, $location) {
 
       $scope.activeComponent = $routeParams.id ? $routeParams.id : 'action-bar';
 
       $scope.sample = { fontSize: 12 };
+
+      $scope.goTo = function() {
+        $location.path('/components/' + $scope.activeComponent);
+      };
 
       $scope.background = {};
 
