@@ -1,47 +1,70 @@
-<script type="text/ng-template" id="app-header-small">
-<div class="app-header">
-  <h2>App Name
-    <!-- Share Button -->
-    <a type="button"
-    class="btn btn-github"
-    href="https://github.com/Rise-Vision/alerts-app"
-    target="_blank">
-      Contribute <i class="fa fa-github fa-lg"></i>
-    </a>
-  </h2>
-</div>
-</script>
-
 <script type="text/ng-template" id="app-header">
 <div class="app-header">
-  <h2>App Name
-    <!-- Share Button -->
+  <div class="app-title">
+    <!-- Breadcrumb Link -->
+    <a class="app-title-links" href="/developer">
+      <i class="fa fa-home"></i> Breadcrumb Link
+    </a>
+    <!-- App Title -->
+    <h1>App Title</h1>
+    <!-- Contribution Link -->
     <a type="button"
-    class="btn btn-github"
-    href="https://github.com/Rise-Vision/repo-name"
-    target="_blank">
-      Contribute <i class="fa fa-github fa-lg"></i>
+      class="btn btn-github btn-xs"
+      href="https://github.com/Rise-Vision/repo-name"
+      target="_blank">
+        Contribute <i class="fa fa-github fa-lg"></i>
     </a>
-  </h2>
-  <!-- Actions -->
-  <div class="actions">
-    <!-- Secondary -->
-    <a href="" class="btn btn-fixed-width btn-default">
-      Secondary Action <i class="fa fa-plus icon-right"></i>
+  </div>
+
+  <div class="global-actions">
+    <!-- Primary Action -->
+    <a href="" class="btn btn-success">
+      Primary Action<i class="fa fa-white fa-plus icon-right"></i>
     </a>
-    <!-- Primary -->
-    <a href="" class="btn btn-fixed-width btn-danger">
-      Primary Action
+    <!-- Secondary Action -->
+    <a href="" class="btn btn-default">
+      Secondary Action
     </a>
   </div>
 </div>
 </script>
 
+<script type="text/ng-template" id="app-header-no-breadcrumb">
+<div class="app-header">
+  <div class="app-title">
+    <!-- App Title -->
+    <h1>App Title</h1>
+    <!-- Contribution Link -->
+    <a type="button"
+      class="btn btn-github btn-xs"
+      href="https://github.com/Rise-Vision/repo-name"
+      target="_blank">
+        Contribute <i class="fa fa-github fa-lg"></i>
+    </a>
+  </div>
+
+  <div class="global-actions no-breadcrumb">
+    <!-- Primary Action -->
+    <a href="" class="btn btn-success">
+      Primary Action<i class="fa fa-white fa-plus icon-right"></i>
+    </a>
+    <!-- Secondary Action -->
+    <a href="" class="btn btn-default">
+      Secondary Action
+    </a>
+  </div>
+</div>
+</script>
 
 <h1 class="add-bottom">App Header</h1>
-<ng-include src="'app-header'"></ng-include>
+<div class="add-bottom">
+  <ng-include src="'app-header'"></ng-include>
+</div>
 <hljs include="'app-header'"></hljs>
-<br /><br /><br />
-<h3>Header Only</h3>
-<ng-include src="'app-header-small'"></ng-include>
-<hljs include="'app-header-small'"></hljs>
+<br/><br/><br/>
+<h3>Without Breadcrumb Link</h3>
+<p class="add-bottom">Add a <code>no-breadcrumb</code> class to the <code>global-actions</code> div if you do not want to include the breadcrumb link</p>
+<div class="add-bottom">
+  <ng-include src="'app-header-no-breadcrumb'"></ng-include>
+</div>
+<hljs include="'app-header-no-breadcrumb'"></hljs>
