@@ -17,3 +17,48 @@ pre,
 .fixed > pre {
 	height: 340px !important;
 }
+
+#padding {
+  background-color: #B8CF8F;
+  height: 20px;
+  width: 20px
+}
+#content {
+  background-color: #9EC0FA;
+  height: 20px;
+  width: 20px
+}
+
+.docs-100 {
+  width: 100%;
+  float: left;
+}
+.px-15 {
+  float: left;
+  height: 100px;
+  width: 15px;
+}
+
+.margin { background-color: #F7CA9C; }
+.padding { background-color: #C2DDB6; }
+.content {
+  background-color: #ACD2F9;
+  float: left;
+  width: calc(100% - 30px);
+}
+.content-half {
+  background-color: #ACD2F9;
+  float: left;
+  width: calc(50% - 30px);
+}
+
+.docs-container {
+  outline: 1px solid black;
+  padding: 0 !important;
+}
+
+.docs-container p {
+  margin: 40px 0;
+  text-align: center;
+  font-weight: bold;
+}

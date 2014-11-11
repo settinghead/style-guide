@@ -47,6 +47,9 @@ angular.module('styleGuideApp', [
         .when('/input', {
           templateUrl: 'partials/input-guidelines.html'
         })
+        .when('/layout', {
+          templateUrl: 'partials/layout-guidelines.html'
+        })
         .when('/componentdemo', {
           templateUrl: 'partials/component-demo.html'
         })

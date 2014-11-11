@@ -63,7 +63,7 @@ gulp.task('dev', function() {
   // Watch HTML files for changes
   console.log('[CONNECT] Watching HTML files for live-reload'.blue);
   watch({
-    glob: ['./components/**/*.html', './components/**/*.js', './libs/**/*.html', './libs/**/*.js', './partials/**/*.html', './js/**/*.js', './libs/**/*.js', './index.html']
+    glob: ['./components/**/*.html', './components/**/*.js', './libs/**/*.html', './libs/**/*.js', './partials/**/*.html', './js/**/*.js', './libs/**/*.js', './index.html', './css/docs.css']
   })
     .pipe(connect.reload());
 

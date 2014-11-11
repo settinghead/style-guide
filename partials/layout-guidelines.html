@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="page-header">
+    <h1 class="page">Layout Guidelines</h1>
+  </div>
+
+  <h2>Basics of Layout</h2>
+</div>
+
+<div class="container docs-container add-bottom">
+  <div class="docs-100 add-bottom">
+    <div class="px-15 padding"></div>
+    <div class="content">
+      <p>Container has an inner padding of <code>15px</code></p>
+    </div>
+    <div class="px-15 padding"></div>
+  </div>
+
+
+  <div class="docs-100 add-bottom">
+    <div class="px-15 margin"></div>
+    <div class="content">
+      <p>Row has a negative horizontal margin of <code>15px</code>. Therefore, it spills to the outer limit of the container and breaks the layout.</p>
+    </div>
+    <div class="px-15 margin"></div>
+  </div>
+
+  <div class="docs-100 add-bottom">
+    <div class="px-15 padding"></div>
+    <div class="content-half">
+      <p>Column has a horizontal padding <code>15px</code>.</p>
+    </div>
+    <div class="px-15 padding"></div>
+    <div class="px-15 padding"></div>
+    <div class="content-half">
+      <p>This accounts for the negative margin of the row and therefore, resets the layout.</p>
+    </div>
+    <div class="px-15 padding"></div>
+  </div>
+
+  <div class="docs-100">
+    <div class="px-15 margin"></div>
+    <div class="content">
+      <p>Containers such as <code>div</code> and <code>form</code> when not used with grid classes can be placed in the main <code>container</code> without breaking the layout.</p>
+    </div>
+    <div class="px-15 margin"></div>
+  </div>
+</div>
+
+<div class="container add-bottom">
+  <h2>Nested Grid</h2>
+  <p>Ensure that all column classes, at each level, are wrapped in a <code>row</code> div.</p>
+
+<hljs>
+<div class="row">
+  <div class="col-sm-9">
+    Level 1: .col-sm-9
+    <div class="row">
+      <div class="col-xs-8 col-sm-6">
+        Level 2: .col-xs-8 .col-sm-6
+      </div>
+      <div class="col-xs-4 col-sm-6">
+        Level 2: .col-xs-4 .col-sm-6
+      </div>
+    </div>
+  </div>
+</div>
+</hljs>
+
+  <h2>Sample Templates</h2>
+  <p>Bootstrap provides a few <a href="http://getbootstrap.com/getting-started/#examples">basic templates</a>. You can customize and adapt these to suit your needs. </p>
+
+</div>
