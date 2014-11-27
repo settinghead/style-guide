@@ -42,30 +42,30 @@
 }());
 
 (function(module) {
-  try { app = angular.module("risevision.widget.common.video-setting"); }
-  catch(err) { app = angular.module("risevision.widget.common.video-setting", []); }
-  app.run(["$templateCache", function($templateCache) {
-    "use strict";
-    $templateCache.put("_angular/video-setting/video-setting.html",
-      "<div class=\"section\">\n" +
-      "  <h5>{{\"video.heading\" | translate}}</h5>\n" +
-      "  <div class=\"checkbox\">\n" +
-      "    <label>\n" +
-      "      <input name=\"video-autoplay\" type=\"checkbox\" ng-model=\"video.autoplay\"> {{\"video.autoplay.label\" | translate}}\n" +
-      "    </label>\n" +
-      "  </div>\n" +
-      "  <!-- TODO: Integrate slider component -->\n" +
-      "  <div class=\"checkbox\">\n" +
-      "    <label>\n" +
-      "      <input name=\"video-loop\" type=\"checkbox\" ng-model=\"video.loop\"> {{\"video.loop.label\" | translate}}\n" +
-      "    </label>\n" +
-      "  </div>\n" +
-      "  <div class=\"checkbox\">\n" +
-      "    <label>\n" +
-      "      <input name=\"video-autohide\" type=\"checkbox\" ng-model=\"video.autohide\"> {{\"video.autohide.label\" | translate}}\n" +
-      "    </label>\n" +
-      "  </div>\n" +
-      "</div>\n" +
-      "");
-  }]);
+try { app = angular.module("risevision.widget.common.video-setting"); }
+catch(err) { app = angular.module("risevision.widget.common.video-setting", []); }
+app.run(["$templateCache", function($templateCache) {
+  "use strict";
+  $templateCache.put("_angular/video-setting/video-setting.html",
+    "<div class=\"section\">\n" +
+    "  <h5>{{\"video.heading\" | translate}}</h5>\n" +
+    "  <div class=\"checkbox\">\n" +
+    "    <label>\n" +
+    "      <input name=\"video-autoplay\" type=\"checkbox\" ng-model=\"video.autoplay\"> {{\"video.autoplay.label\" | translate}}\n" +
+    "    </label>\n" +
+    "  </div>\n" +
+    "  <!-- TODO: Integrate slider component -->\n" +
+    "  <div class=\"checkbox\">\n" +
+    "    <label>\n" +
+    "      <input name=\"video-loop\" type=\"checkbox\" ng-model=\"video.loop\"> {{\"video.loop.label\" | translate}}\n" +
+    "    </label>\n" +
+    "  </div>\n" +
+    "  <div class=\"checkbox\">\n" +
+    "    <label>\n" +
+    "      <input name=\"video-autohide\" type=\"checkbox\" ng-model=\"video.autohide\"> {{\"video.autohide.label\" | translate}}\n" +
+    "    </label>\n" +
+    "  </div>\n" +
+    "</div>\n" +
+    "");
+}]);
 })();
