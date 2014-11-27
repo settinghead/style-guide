@@ -115,7 +115,8 @@
         "dist/js/angular/url-field.js",
         "dist/js/url-field.js",
         "dist/js/angular/background-setting.js",
-        "dist/js/angular/widget-button-toolbar.js"
+        "dist/js/angular/widget-button-toolbar.js",
+        "dist/js/angular/video-setting.js"
       ]
     },
     "component-google-spreadsheet-controls": {

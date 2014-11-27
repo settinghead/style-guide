@@ -174,6 +174,10 @@ angular.module('styleGuideApp.controllers')
         'responsive-toolbar': {
           title: 'Responsive Toolbar',
           template: 'components/bootstrap-based/responsive-toolbar.html'
+        },
+        'video-setting': {
+          title: 'Video Setting',
+          template: 'libs/widget-settings-ui-components/demos/video-setting-demo.html'
         }
       };
 
@@ -258,6 +262,7 @@ angular.module('styleGuideApp.controllers')
 
       $scope.alignText = 'right';
       $scope.spreadsheet = {};
+      $scope.video = {};
 
       $scope.defaultSpinnerOptions = {
         lines: 12, // The number of lines to draw
