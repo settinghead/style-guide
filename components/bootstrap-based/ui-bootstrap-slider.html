@@ -1,0 +1,30 @@
+<h2 class="add-bottom">UI Bootstrap Slider</h2>
+
+<p>An Angular directive for making use of the bootstrap-slider component. The <a href="https://github.com/seiyria/angular-bootstrap-slider">angular-bootstrap-slider</a> directive supports different orientations (horizontal/vertical), custom formatter, range selector, and more.
+
+    This directive can support more complex examples, for more understanding on the library being used by the directive, see <a href="https://github.com/seiyria/bootstrap-slider">bootstrap-slider</a>. <strong>Note</strong>, this directive currently has a dependency on version <code>3.1.0</code> of the bootstrap-slider library</p>
+
+<p class="add-bottom"><strong>Dependencies</strong> <span class="label label-info">Bootstrap</span> <span class="label label-info">bootstrap-slider</span> <span class="label label-info">Angular</span> <span class="label label-info">angular-bootstrap-slider</span></p>
+
+<h3>Module Includes</h3>
+<p>Declare a dependency on the ui-bootstrap in your module:</p>
+<code>angular.module('myApp', ['ui.bootstrap-slider']);</code>
+
+
+<h3>Script Includes</h3>
+<p>Make sure you include the following files in <code>index.html</code></p>
+<hljs>
+    bower_components/bootstrap/dist/js/bootstrap.js
+    bower_components/angular/angular.js
+    bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js
+    bower_components/angular-bootstrap-slider/slider.js
+</hljs>
+<h3>Usage</h3>
+<hljs include="'ui-slider'"></hljs>
+
+<h3>Example</h3>
+<ng-include src="'ui-slider'"></ng-include>
+
+<script type="text/ng-template" id="ui-slider">
+    <slider orientation="horizontal" handle="round" ng-model="sliderValue" min="0" step="1" max="100"></slider>
+</script>
