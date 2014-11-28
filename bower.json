@@ -26,7 +26,8 @@
     "angular-bootstrap": "~0.11.0",
     "component-storage-loader": "git@github.com:Rise-Vision/component-storage-loader.git",
     "component-subscription-status": "git@github.com:Rise-Vision/component-subscription-status.git",
-    "ui-bootstrap": "~0.11.0"
+    "ui-bootstrap": "~0.11.0",
+    "angular-bootstrap-slider": "~0.0.6"
   },
   "overrides": {
     "component-storage-loader": {
@@ -159,6 +160,16 @@
         "demos/app-subscription-status-demo.html",
         "dist/js/subscription-status.js",
         "dist/css/subscription-status.css"
+      ]
+    },
+    "seiyria-bootstrap-slider": {
+      "main": [
+        "dist/bootstrap-slider.min.js"
+      ]
+    },
+    "angular-boostrap-slider": {
+      "main": [
+        "slider.js"
       ]
     }
   },

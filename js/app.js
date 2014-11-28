@@ -8,6 +8,7 @@ angular.module('styleGuideApp', [
   'ngSanitize',
   'hljs',
   'ui.select2',
+  'ui.bootstrap-slider',
   'styleGuideApp.controllers',
   'styleGuideApp.directives',
   'risevision.widget.common',

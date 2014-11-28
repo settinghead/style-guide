@@ -178,6 +178,10 @@ angular.module('styleGuideApp.controllers')
         'video-setting': {
           title: 'Video Setting',
           template: 'libs/widget-settings-ui-components/demos/video-setting-demo.html'
+        },
+        'ui-bootstrap-slider': {
+          title: 'UI Bootstrap Slider',
+          template: 'components/bootstrap-based/ui-bootstrap-slider.html'
         }
       };
 
@@ -296,5 +300,8 @@ angular.module('styleGuideApp.controllers')
       };
 
       $scope.storageClientSource = 'angular';//example code to show on storage selector page
+
+      $scope.sliderValue = 50;
+
     }
   ]);
